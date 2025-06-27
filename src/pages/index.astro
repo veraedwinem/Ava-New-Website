@@ -9,11 +9,11 @@ import Button from "../components/UI/Button.astro";
 <BaseLayout transition:name="nav-trans">
   <HeroSection 
     title="Bienvenido a Alianza Vida Abundante"
-    subtitle="Un lugar para aprender, liderar y crecer juntos."
+    subtitle="Ministros mejores, iglesias mejores. Iglesias mejores, comunidades mejores."
     backgroundImage="/uploads/hero-bg.png"
-    ctaText="Conferencia Fiel 2025"
-    ctaLink="https://www.youtube.com/watch?v=NV98YtvFN6A&list=PLxnZIeiBlkVjBWeIAo30mnRvhKqgB5xHy&pp=0gcJCV8EOCosWNin"
-    secondaryCtaText="Ver canal YouTube"
+    ctaText="Devocional AVA"
+    ctaLink="https://alianzava.us11.list-manage.com/subscribe?u=b9e5440e42390243cebf19d53&id=a354a7c76d"
+    secondaryCtaText="YouTube"
     secondaryCtaLink="https://www.youtube.com/@AlianzaVA"
   />
   
@@ -21,26 +21,45 @@ import Button from "../components/UI/Button.astro";
   <section class="py-16 bg-white">
     <div class="container">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">Contenido para tu crecimiento</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Contenido para el crecimiento</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
             <h3 class="text-xl font-bold mb-3">Masterclass</h3>
-            <p class="text-2xl font-bold text-primary-600 mb-2">Mensual</p>
-            <p class="text-gray-600 mb-4">Conéctate a nuestro live mensual para ver la masterclass</p>
-            <p class="italic text-gray-500">Última masterlcass: ¿Como tener una familia sobrenatural?</p>
+            <p class="text-2xl font-bold text-primary-600 mb-2"></p>
+            <p class="text-gray-600 mb-4">Sesiones intensivas y prácticas enfocadas en liderazgo bíblico, 
+              diseñadas para equipar a ministros y líderes cristianos con herramientas aplicables dentro y fuera del ministerio. 
+            Abordamos temas actuales desde una perspectiva bíblica y estratégica.</p>
+            <div class="flex justify-center">
+              <iframe 
+                src="https://www.youtube.com/embed/videoseries?list=PLxnZIeiBlkVjq_92c_W4sUo58nPgd8mFg" 
+                class="w-full max-w-2xl h-64 rounded-lg shadow-md" 
+                title="Masterclass 2025"
+                allowfullscreen>
+              </iframe>
+            </div>
           </div>
           
           <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
-            <h3 class="text-xl font-bold mb-3">Family Service</h3>
-            <p class="text-2xl font-bold text-primary-600 mb-2">10:30 AM</p>
-            <p class="text-gray-600 mb-4">Contemporary worship with children's ministry</p>
-            <p class="italic text-gray-500">In-person only</p>
+            <h3 class="text-xl font-bold mb-3">Formación pastoral</h3>
+            <p class="text-2xl font-bold text-primary-600 mb-2"></p>
+            <p class="text-gray-600 mb-4">Proceso de capacitación continua que busca fortalecer el llamado pastoral mediante enseñanza bíblica sólida, desarrollo de carácter ministerial y acompañamiento. A través de este proceso, forma también una comunidad ministerial comprometida, y camina unida hacia la edificación de iglesias.</p>
+            <p class="italic text-gray-500"></p>
+
+            <div class="flex justify-center">
+              <iframe 
+                src="https://www.youtube.com/embed/videoseries?list=PLxnZIeiBlkVj3jY2k6p1BnhXk1tJkt80v" 
+                class="w-full max-w-2xl h-64 rounded-lg shadow-md" 
+                title="Formación pastoral 2025"
+                allowfullscreen>
+              </iframe>
+            </div>
+
           </div>
         </div>
-        
-        <Button href="/im-new" variant="outline">
-          Plan Your Visit
+
+        <Button target="_blank" href="https://api.whatsapp.com/message/3KXK5UW2PPXVF1?autoload=1&app_absent=0" variant="outline">
+          Quiero ser parte
         </Button>
       </div>
     </div>
@@ -59,16 +78,14 @@ import Button from "../components/UI/Button.astro";
         </div>
         
         <div>
-          <h2 class="text-3xl md:text-4xl font-bold mb-6">About Our Church</h2>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Qué es AVA?</h2>
           <p class="text-gray-700 mb-6 text-lg">
-            We are a welcoming Christian community dedicated to sharing God's love through worship, fellowship, and service. Our church has been serving the community for over 50 years, providing a place for spiritual growth and connection.
-          </p>
-          <p class="text-gray-700 mb-8 text-lg">
-            Whether you're exploring faith for the first time or looking for a church home, we invite you to join us. Our diverse congregation welcomes people of all ages, backgrounds, and walks of life.
+            AVA (Alianza Vida Abundante) es una comunidad de pastores comprometidos con edificar y fortalecer a pastores, líderes e iglesias en todo el mundo hispano. A través del seguimiento cercano a cada pastor, buscamos formar ministerios saludables que reflejen el carácter de Cristo y extiendan Su Reino, brindando mentoría personalizada y espacios de capacitación continua para el liderazgo y el ministerio, con el fin de equipar a siervos fieles que sirvan con excelencia.
           </p>
           
+          
           <Button href="/about-us">
-            Learn More About Us
+            Misión y Visión
           </Button>
         </div>
       </div>
