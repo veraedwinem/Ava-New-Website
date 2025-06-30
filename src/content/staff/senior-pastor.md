@@ -1,6 +1,6 @@
 ---
-name: "Rev. Dr. John Smith"
-title: "Senior Pastor"
+name: "Ps. Juan Spyker"
+title: "Presidente de AVA"
 image: "/uploads/staff/john-smith.webp"
 email: "pastor.john@churchname.org"
 phone: "+1-555-0101"

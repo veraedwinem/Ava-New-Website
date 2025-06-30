@@ -1,6 +1,6 @@
 ---
-name: "Rev. Sarah Martinez"
-title: "Associate Pastor & Women's Ministry Director"
+name: "Ps. Faby Pérez"
+title: "Iglesia El Camino - Poza Rica, Veracruz"
 image: "/uploads/staff/sarah-martinez.webp"
 email: "sarah.martinez@churchname.org"
 phone: "+1-555-0102"
