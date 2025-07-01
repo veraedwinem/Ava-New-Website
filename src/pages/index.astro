@@ -95,72 +95,71 @@ import Button from "../components/UI/Button.astro";
   <!-- Events Section -->
   <EventList />
   
-  <!-- Sermons Section -->
-  <SermonList />
-  
   <!-- Ministries Preview -->
   <section class="py-16 bg-gray-50">
     <div class="container">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Ministries</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestras actividades</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Discover how you can connect, serve, and grow through our various ministries
+          Descubre cómo puedes conocer, conectar y formar parte de AVA.
         </p>
       </div>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="card text-center p-8">
           <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-primary-100 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="#3e45b5">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">Children's Ministry</h3>
+          <h3 class="text-xl font-bold mb-3">Formación Pastoral</h3>
           <p class="text-gray-700 mb-4">
-            Nurturing the spiritual growth of our children through engaging, age-appropriate activities.
+            Formación Pastoral es una iniciativa continua que reúne periódicamente a los miembros y amigos de AVA, con el propósito de fortalecer a los edificadores mediante enseñanza bíblica, ministración espiritual y espacios de comunidad ministerial.
           </p>
-          <a href="/ministries/childrens-ministry" class="text-primary-600 font-medium hover:text-primary-700">
-            Learn More →
-          </a>
-        </div>
-        
-        <div class="card text-center p-8">
-          <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-secondary-100 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-secondary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold mb-3">Worship Ministry</h3>
-          <p class="text-gray-700 mb-4">
-            Leading our congregation in worship through music, song, and creative expression.
-          </p>
-          <a href="/ministries/worship-ministry" class="text-primary-600 font-medium hover:text-primary-700">
-            Learn More →
+          <a href="https://www.youtube.com/watch?v=jpBKY1kZDVA&list=PLxnZIeiBlkVj3jY2k6p1BnhXk1tJkt80v" class="text-primary-600 font-medium hover:text-primary-700" target="_blank">
+            Ver →
           </a>
         </div>
         
         <div class="card text-center p-8">
           <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-accent-100 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-accent-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-secondary-600" fill="none" viewBox="0 0 24 24" stroke="#f76c33">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 4a1 1 0 011-1h16a1 1 0 011 1v12a1 1 0 01-1 1h-7v3h3m-6 0h3m-3 0H9m6-8h2a1 1 0 000-2h-2v2zM5 13h6v-2H5v2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Masterclass</h3>
+          <p class="text-gray-700 mb-4">
+            Masterclass es un espacio de desarrollo dirigido a líderes que edifican el Reino de Dios dentro y fuera de la iglesia. A través de enseñanzas profundas y aplicadas, el pastor Juan Spyker expone principios bíblicos, ayudando a los líderes a crecer más.
+          </p>
+          <a href="https://www.youtube.com/watch?v=KQ6egltT5Jc&list=PLxnZIeiBlkVjq_92c_W4sUo58nPgd8mFg" class="text-primary-600 font-medium hover:text-primary-700" target="_blank">
+            Ver →
+          </a>
+        </div>
+        
+        <div class="card text-center p-8">
+          <div class="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: #e8d5af;">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-accent-600" fill="none" viewBox="0 0 24 24" stroke="#7a6254">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">Community Outreach</h3>
+          <h3 class="text-xl font-bold mb-3">Conferencia Fiel</h3>
           <p class="text-gray-700 mb-4">
-            Serving our local community through various programs and initiatives to share God's love.
+            Conferencia FIEL es un encuentro anual para pastores y líderes comprometidos con servir a la iglesia con integridad y fidelidad. Cada año, Dios renueva el corazón del ministro y afirma su llamado en un ambiente centrado en la Palabra y la presencia de Dios.
           </p>
-          <a href="/ministries/community-outreach" class="text-primary-600 font-medium hover:text-primary-700">
-            Learn More →
+          <a href="https://www.youtube.com/watch?v=z1zE-1loXAU&list=PLxnZIeiBlkVjBWeIAo30mnRvhKqgB5xHy" class="text-primary-600 font-medium hover:text-primary-700" target="_blank">
+            Ver →
           </a>
         </div>
       </div>
-      
+      <!-- Button to view all ministries 
       <div class="mt-12 text-center">
         <Button href="/ministries" variant="outline">
           View All Ministries
         </Button>
       </div>
     </div>
+    -->
   </section>
   
   <!-- Call to Action -->
