@@ -1,6 +1,6 @@
 ---
-name: "Rev. Michael Johnson"
-title: "Youth Pastor"
+name: "Ps. Domingo Álvarez"
+title: "Vid Central - Querétaro, Querétaro"
 image: "/uploads/staff/michael-johnson.webp"
 email: "michael.johnson@churchname.org"
 phone: "+1-555-0103"
