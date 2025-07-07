@@ -5,61 +5,71 @@ import Button from "../components/UI/Button.astro";
 ---
 
 <BaseLayout
-  title="I'm New - Church Name"
-  description="Everything you need to know about visiting our church for the first time. Find service times, what to expect, and how to get connected."
+  title="Soy nuevo aquí - Alianza Vida Abundante"
+  description="Todo lo que necesitas saber sobre asistir a nuestros eventos por primera vez. Encuentra horarios, qué esperar y cómo conectarte."
   transition:name="nav-trans"
 >
   <PageHeader 
-    title="I'm New Here" 
-    subtitle="Welcome! We're glad you're considering a visit."
-    backgroundImage="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&h=600&fit=crop&crop=center"
+    title="Soy nuevo aquí" 
+    subtitle="¡Bienvenido! Nos alegra que estés considerando acompañarnos."
+    backgroundImage="public/uploads/logo.webp"
   />
   
   <!-- What to Expect -->
   <section class="py-16">
     <div class="container">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">What to Expect</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Primero</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Here's what you can expect when you visit us for the first time
+          Elije la actividad que más te interese y haz clic en el botón para obtener más información.
         </p>
       </div>
       
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="text-center p-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="card text-center p-8">
           <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-primary-100 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="#3e45b5">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">Service Length</h3>
-          <p class="text-gray-700">
-            Our services typically last about 75 minutes, including worship, announcements, and the sermon.
+          <h3 class="text-xl font-bold mb-3">Formación Pastoral</h3>
+          <p class="text-gray-700 mb-4">
+            Formación Pastoral es una iniciativa continua que reúne periódicamente a los miembros y amigos de AVA, con el propósito de fortalecer a los edificadores mediante enseñanza bíblica, ministración espiritual y espacios de comunidad ministerial.
           </p>
+          <a href="https://www.youtube.com/watch?v=jpBKY1kZDVA&list=PLxnZIeiBlkVj3jY2k6p1BnhXk1tJkt80v" class="text-primary-600 font-medium hover:text-primary-700" target="_blank">
+            Ver última Formación Pastoral →
+          </a>
         </div>
         
-        <div class="text-center p-6">
-          <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-primary-100 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+        <div class="card text-center p-8">
+          <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-accent-100 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-secondary-600" fill="none" viewBox="0 0 24 24" stroke="#f76c33">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 4a1 1 0 011-1h16a1 1 0 011 1v12a1 1 0 01-1 1h-7v3h3m-6 0h3m-3 0H9m6-8h2a1 1 0 000-2h-2v2zM5 13h6v-2H5v2z" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">Worship Style</h3>
-          <p class="text-gray-700">
-            Our worship blends contemporary and traditional elements. We sing both modern worship songs and classic hymns.
+          <h3 class="text-xl font-bold mb-3">Masterclass</h3>
+          <p class="text-gray-700 mb-4">
+            Masterclass es un espacio de desarrollo dirigido a líderes que edifican el Reino de Dios dentro y fuera de la iglesia. A través de enseñanzas profundas y aplicadas, el pastor Juan Spyker expone principios bíblicos, ayudando a los líderes a crecer más.
           </p>
+          <a href="https://www.youtube.com/watch?v=KQ6egltT5Jc&list=PLxnZIeiBlkVjq_92c_W4sUo58nPgd8mFg" class="text-primary-600 font-medium hover:text-primary-700" target="_blank">
+            Ver última Masterclass →
+          </a>
         </div>
         
-        <div class="text-center p-6">
-          <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-primary-100 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        <div class="card text-center p-8">
+          <div class="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: #e8d5af;">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-accent-600" fill="none" viewBox="0 0 24 24" stroke="#7a6254">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">Teaching Style</h3>
-          <p class="text-gray-700">
-            Our messages are biblically-based, practical, and applicable to everyday life. We focus on how Scripture speaks to our current challenges.
+          <h3 class="text-xl font-bold mb-3">Conferencia Fiel</h3>
+          <p class="text-gray-700 mb-4">
+            Conferencia FIEL es un encuentro anual para pastores y líderes comprometidos con servir a la iglesia con integridad y fidelidad. Cada año, Dios renueva el corazón del ministro y afirma su llamado en un ambiente centrado en la Palabra y la presencia de Dios.
           </p>
+          <a href="https://www.youtube.com/watch?v=z1zE-1loXAU&list=PLxnZIeiBlkVjBWeIAo30mnRvhKqgB5xHy" class="text-primary-600 font-medium hover:text-primary-700" target="_blank">
+            Ver última Conferencia Fiel →
+          </a>
         </div>
       </div>
     </div>

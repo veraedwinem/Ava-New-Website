@@ -1,6 +1,6 @@
 ---
 name: "Ps. Gamaliel Sosa"
-title: "Iglesia El Camino - Zihuatanejo, Guerrero"
+title: "Guerrero"
 image: "/uploads/staff/david-wilson.webp"
 email: "david.wilson@churchname.org"
 phone: "+1-555-0104"

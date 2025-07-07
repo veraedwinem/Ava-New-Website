@@ -5,7 +5,7 @@ import StaffList from "../components/Sections/StaffList.astro";
 ---
 
 <BaseLayout
-  title="About Us - Church Name"
+  title="Nosotros - Alianza Vida Abundante"
   description="Learn about our church's history, mission, values, and the people who make our community special."
   transition:name="nav-trans"
 >
@@ -203,30 +203,6 @@ import StaffList from "../components/Sections/StaffList.astro";
     </div>
   </section>
   
-  <!-- Leadership Team Preview -->
-  <section class="py-16 bg-gray-50">
-    <div class="container">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Conoce a nuestros mentores</h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Nuestro dedicado equipo de mentores sirve a nuestra comunidad con pasión y compromiso.
-        </p>
-      </div>
-      
-      <!-- Show limited staff preview -->
-      <StaffList showAll={false} limit={3} />
-      
-      <div class="mt-12 text-center">
-        <a 
-          href="/staff" 
-          class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-primary-600 rounded-md shadow-sm hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
-        >
-          Conoce a todos los mentores
-        </a>
-      </div>
-    </div>
-  </section>
-  
   <!-- Statement of Faith -->
   <section class="py-16">
     <div class="container">
@@ -257,12 +233,7 @@ import StaffList from "../components/Sections/StaffList.astro";
         <p>
           We believe the Holy Spirit convicts the world of sin, regenerates believers, indwells them, and empowers them for godly living and service.
         </p>
-        
-        <h3>Salvation</h3>
-        <p>
-          We believe salvation is by grace alone, through faith alone, in Christ alone. Good works are the necessary fruit of true faith but are not the basis of our right standing before God.
-        </p>
-        
+                
         <h3>The Church</h3>
         <p>
           We believe the church is the body of Christ, consisting of all true believers. Its mission is to worship God, build up believers in their faith, and share the gospel with the world.
