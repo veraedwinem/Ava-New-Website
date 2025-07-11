@@ -1,4 +1,5 @@
 import { format, parseISO } from "date-fns";
+import { es } from "date-fns/locale"; //
 
 /**
  * Format a date in a human-readable format
@@ -6,13 +7,13 @@ import { format, parseISO } from "date-fns";
  * @param {string} formatStr The format string (default: 'MMMM d, yyyy')
  * @returns {string} The formatted date
  */
-export function formatDate(date, formatStr = "MMMM d, yyyy") {
+export function formatDate(date, formatStr = "d 'de' MMMM 'del' yyyy") {
   if (!date) return "";
   
   // If date is a string, parse it
   const dateObj = typeof date === "string" ? parseISO(date) : date;
   
-  return format(dateObj, formatStr);
+  return format(dateObj, formatStr, { locale: es });
 }
 
 /**

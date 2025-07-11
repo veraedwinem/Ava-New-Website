@@ -5,13 +5,13 @@ import Button from "../components/UI/Button.astro";
 ---
 
 <BaseLayout
-  title="Contact Us - Church Name"
-  description="Get in touch with our church. Find our contact information, location, and service times."
+  title="Contáctanos - Alianza VA"
+  description="Ponte en contacto con nuestra iglesia. Encuentra nuestra información de contacto, ubicación y horarios de servicio."
   transition:name="nav-trans"
 >
   <PageHeader 
-    title="Contact Us" 
-    subtitle="We'd love to hear from you"
+    title="Contáctanos" 
+    subtitle="Nos encantaría saber de ti"
     backgroundImage="/uploads/contact-header-bg.webp"
   />
   
@@ -21,11 +21,11 @@ import Button from "../components/UI/Button.astro";
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <!-- Contact Form -->
         <div>
-          <h2 class="text-3xl font-bold mb-6">Send Us a Message</h2>
+          <h2 class="text-3xl font-bold mb-6">Envíanos un Mensaje</h2>
           
           <form id="contact-form" class="space-y-6">
             <div>
-              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
               <input 
                 type="text" 
                 id="name" 
@@ -36,7 +36,7 @@ import Button from "../components/UI/Button.astro";
             </div>
             
             <div>
-              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico</label>
               <input 
                 type="email" 
                 id="email" 
@@ -47,7 +47,7 @@ import Button from "../components/UI/Button.astro";
             </div>
             
             <div>
-              <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone (optional)</label>
+              <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Teléfono (opcional)</label>
               <input 
                 type="tel" 
                 id="phone" 
@@ -57,25 +57,25 @@ import Button from "../components/UI/Button.astro";
             </div>
             
             <div>
-              <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+              <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Asunto</label>
               <select 
                 id="subject" 
                 name="subject" 
                 required
                 class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary-500 focus:border-primary-500"
               >
-                <option value="">Please select</option>
-                <option value="General Inquiry">General Inquiry</option>
-                <option value="Prayer Request">Prayer Request</option>
-                <option value="Pastoral Care">Pastoral Care</option>
-                <option value="Volunteering">Volunteering</option>
-                <option value="Events">Events</option>
-                <option value="Other">Other</option>
+                <option value="">Por favor selecciona</option>
+                <option value="General Inquiry">Consulta General</option>
+                <option value="Prayer Request">Petición de Oración</option>
+                <option value="Pastoral Care">Cuidado Pastoral</option>
+                <option value="Volunteering">Voluntariado</option>
+                <option value="Events">Eventos</option>
+                <option value="Other">Otro</option>
               </select>
             </div>
             
             <div>
-              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
               <textarea 
                 id="message" 
                 name="message" 
@@ -87,7 +87,7 @@ import Button from "../components/UI/Button.astro";
             
             <div>
               <Button type="submit" variant="primary">
-                Send Message
+                Enviar Mensaje
               </Button>
             </div>
           </form>
@@ -99,15 +99,15 @@ import Button from "../components/UI/Button.astro";
               
               // In a real implementation, you would handle the form submission here
               // For this template, we'll just show a success message
-              alert('Thank you for your message! We will get back to you soon.');
+              alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
               this.reset();
             });
           </script>
         </div>
         
-        <!-- Contact Information -->
+        <!-- Información de Contacto -->
         <div>
-          <h2 class="text-3xl font-bold mb-6">Contact Information</h2>
+          <h2 class="text-3xl font-bold mb-6">Información de Contacto</h2>
           
           <div class="space-y-8">
             <div class="flex items-start">
@@ -120,10 +120,10 @@ import Button from "../components/UI/Button.astro";
                 </div>
               </div>
               <div class="ml-4">
-                <h3 class="text-xl font-bold mb-1">Address</h3>
+                <h3 class="text-xl font-bold mb-1">Dirección</h3>
                 <address class="not-italic text-gray-700">
-                  <p>123 Main Street</p>
-                  <p>Anytown, ST 12345</p>
+                  <p>123 Calle Principal</p>
+                  <p>Ciudad, ST 12345</p>
                 </address>
               </div>
             </div>
@@ -137,7 +137,7 @@ import Button from "../components/UI/Button.astro";
                 </div>
               </div>
               <div class="ml-4">
-                <h3 class="text-xl font-bold mb-1">Phone</h3>
+                <h3 class="text-xl font-bold mb-1">Teléfono</h3>
                 <p class="text-gray-700">
                   <a href="tel:+15551234567" class="hover:text-primary-600">
                     (555) 123-4567
@@ -155,7 +155,7 @@ import Button from "../components/UI/Button.astro";
                 </div>
               </div>
               <div class="ml-4">
-                <h3 class="text-xl font-bold mb-1">Email</h3>
+                <h3 class="text-xl font-bold mb-1">Correo Electrónico</h3>
                 <p class="text-gray-700">
                   <a href="mailto:info@churchname.org" class="hover:text-primary-600">
                     info@churchname.org
@@ -173,19 +173,19 @@ import Button from "../components/UI/Button.astro";
                 </div>
               </div>
               <div class="ml-4">
-                <h3 class="text-xl font-bold mb-1">Office Hours</h3>
+                <h3 class="text-xl font-bold mb-1">Horario de Oficina</h3>
                 <div class="text-gray-700">
-                  <p><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</p>
-                  <p><strong>Saturday:</strong> 9:00 AM - 1:00 PM</p>
-                  <p><strong>Sunday:</strong> Closed (except for services)</p>
+                  <p><strong>Lunes - Viernes:</strong> 9:00 AM - 5:00 PM</p>
+                  <p><strong>Sábado:</strong> 9:00 AM - 1:00 PM</p>
+                  <p><strong>Domingo:</strong> Cerrado (excepto para servicios)</p>
                 </div>
               </div>
             </div>
           </div>
           
-          <!-- Social Media Links -->
+          <!-- Enlaces de Redes Sociales -->
           <div class="mt-8">
-            <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+            <h3 class="text-xl font-bold mb-4">Conéctate Con Nosotros</h3>
             <div class="flex space-x-4">
               <a href="https://facebook.com/yourchurch" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-primary-600 transition-colors">
                 <span class="sr-only">Facebook</span>
@@ -214,13 +214,13 @@ import Button from "../components/UI/Button.astro";
     </div>
   </section>
   
-  <!-- Map Section -->
+  <!-- Sección del Mapa -->
   <section class="py-16 bg-gray-50">
     <div class="container">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Location & Directions</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Ubicación y Direcciones</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          We're easy to find in the heart of Anytown
+          Somos fáciles de encontrar en el corazón de la Ciudad
         </p>
       </div>
       
@@ -229,42 +229,42 @@ import Button from "../components/UI/Button.astro";
           <!-- Placeholder for Google Maps iframe -->
           <div class="w-full h-full flex items-center justify-center bg-gray-300">
             <p class="text-gray-600 text-center p-4">
-              Google Maps embed would go here<br>
-              <span class="text-sm">(For privacy reasons, not included in the template)</span>
+              Aquí iría el mapa de Google Maps<br>
+              <span class="text-sm">(Por razones de privacidad, no incluido en la plantilla)</span>
             </p>
           </div>
         </div>
         
         <div>
           <div class="bg-white p-8 rounded-lg shadow-md">
-            <h3 class="text-xl font-bold mb-4">Getting Here</h3>
+            <h3 class="text-xl font-bold mb-4">Cómo Llegar</h3>
             
             <div class="space-y-6">
               <div>
-                <h4 class="font-bold mb-2">By Car</h4>
+                <h4 class="font-bold mb-2">En Coche</h4>
                 <p class="text-gray-700">
-                  We have a large parking lot with plenty of free parking spaces, including accessible parking near the main entrance.
+                  Tenemos un amplio estacionamiento con muchos espacios gratuitos, incluyendo estacionamiento accesible cerca de la entrada principal.
                 </p>
               </div>
               
               <div>
-                <h4 class="font-bold mb-2">Public Transportation</h4>
+                <h4 class="font-bold mb-2">Transporte Público</h4>
                 <p class="text-gray-700">
-                  Bus lines 10 and 14 stop directly in front of our building. The nearest subway station is Central Station, a 10-minute walk from our church.
+                  Las líneas de autobús 10 y 14 paran directamente frente a nuestro edificio. La estación de metro más cercana es la Estación Central, a 10 minutos a pie de nuestra iglesia.
                 </p>
               </div>
               
               <div>
-                <h4 class="font-bold mb-2">Accessibility</h4>
+                <h4 class="font-bold mb-2">Accesibilidad</h4>
                 <p class="text-gray-700">
-                  Our building is fully accessible with ramp access at the main entrance and elevator access to all floors. Accessible restrooms are available on each floor.
+                  Nuestro edificio es completamente accesible con rampas en la entrada principal y acceso por ascensor a todos los pisos. Hay baños accesibles disponibles en cada piso.
                 </p>
               </div>
             </div>
             
             <div class="mt-6">
               <Button href="https://maps.google.com/?q=123+Main+Street,+Anytown,+ST+12345" target="_blank" variant="primary">
-                Get Directions
+                Obtener Direcciones
               </Button>
             </div>
           </div>
@@ -273,21 +273,21 @@ import Button from "../components/UI/Button.astro";
     </div>
   </section>
   
-  <!-- Staff Contact -->
+  <!-- Contacto del Personal -->
   <section id="prayer" class="py-16">
     <div class="container">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Ministry Contacts</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Contactos Ministeriales</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Need to reach a specific ministry or staff member? Here's who to contact
+          ¿Necesitas contactar a un ministerio o miembro del personal específico? Aquí está a quién contactar
         </p>
       </div>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
         <div class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-xl font-bold mb-2">Pastoral Care</h3>
+          <h3 class="text-xl font-bold mb-2">Cuidado Pastoral</h3>
           <p class="text-gray-700 mb-4">
-            For spiritual counseling, hospital visits, or prayer requests
+            Para consejería espiritual, visitas hospitalarias o peticiones de oración
           </p>
           <div class="flex items-center text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -300,9 +300,9 @@ import Button from "../components/UI/Button.astro";
         </div>
         
         <div class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-xl font-bold mb-2">Children's Ministry</h3>
+          <h3 class="text-xl font-bold mb-2">Ministerio de Niños</h3>
           <p class="text-gray-700 mb-4">
-            For questions about programs for children from birth through 5th grade
+            Para preguntas sobre programas para niños desde el nacimiento hasta 5º grado
           </p>
           <div class="flex items-center text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -315,9 +315,9 @@ import Button from "../components/UI/Button.astro";
         </div>
         
         <div class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-xl font-bold mb-2">Youth Ministry</h3>
+          <h3 class="text-xl font-bold mb-2">Ministerio de Jóvenes</h3>
           <p class="text-gray-700 mb-4">
-            For questions about programs for students in 6th-12th grade
+            Para preguntas sobre programas para estudiantes de 6º a 12º grado
           </p>
           <div class="flex items-center text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -330,9 +330,9 @@ import Button from "../components/UI/Button.astro";
         </div>
         
         <div class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-xl font-bold mb-2">Worship Ministry</h3>
+          <h3 class="text-xl font-bold mb-2">Ministerio de Adoración</h3>
           <p class="text-gray-700 mb-4">
-            For information about our music and creative arts ministries
+            Para información sobre nuestros ministerios de música y artes creativas
           </p>
           <div class="flex items-center text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -345,9 +345,9 @@ import Button from "../components/UI/Button.astro";
         </div>
         
         <div class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-xl font-bold mb-2">Outreach & Missions</h3>
+          <h3 class="text-xl font-bold mb-2">Alcance y Misiones</h3>
           <p class="text-gray-700 mb-4">
-            For information about our local and global mission initiatives
+            Para información sobre nuestras iniciativas misioneras locales y globales
           </p>
           <div class="flex items-center text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -360,9 +360,9 @@ import Button from "../components/UI/Button.astro";
         </div>
         
         <div class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-xl font-bold mb-2">Admin & Facilities</h3>
+          <h3 class="text-xl font-bold mb-2">Administración e Instalaciones</h3>
           <p class="text-gray-700 mb-4">
-            For building use, scheduling, and administrative questions
+            Para uso del edificio, programación y preguntas administrativas
           </p>
           <div class="flex items-center text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -378,12 +378,13 @@ import Button from "../components/UI/Button.astro";
   </section>
   
   <!-- Newsletter Signup -->
+  <!-- Suscripción al Boletín -->
   <section id="newsletter" class="py-16 bg-primary-50">
     <div class="container">
       <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+        <h2 class="text-3xl font-bold mb-4">Suscríbete a Nuestro Boletín</h2>
         <p class="text-lg text-gray-700 mb-8">
-          Stay updated with the latest events, announcements, and inspiration from our church community.
+          Mantente actualizado con los últimos eventos, anuncios e inspiración de nuestra comunidad eclesiástica.
         </p>
         
         <form id="newsletter-form" class="max-w-md mx-auto">
@@ -391,17 +392,17 @@ import Button from "../components/UI/Button.astro";
             <input 
               type="email" 
               id="newsletter-email" 
-              placeholder="Your email address" 
+              placeholder="Tu dirección de correo electrónico" 
               required
               class="flex-grow px-4 py-3 border border-gray-300 rounded-md focus:ring-primary-500 focus:border-primary-500"
             />
             
             <Button type="submit" variant="primary">
-              Subscribe
+              Suscribirse
             </Button>
           </div>
           <p class="text-sm text-gray-600 mt-3">
-            We respect your privacy. You can unsubscribe at any time.
+            Respetamos tu privacidad. Puedes darte de baja en cualquier momento.
           </p>
         </form>
         
@@ -412,7 +413,7 @@ import Button from "../components/UI/Button.astro";
             
             // In a real implementation, you would handle the form submission here
             // For this template, we'll just show a success message
-            alert('Thank you for subscribing to our newsletter!');
+            alert('¡Gracias por suscribirte a nuestro boletín!');
             this.reset();
           });
         </script>

@@ -8,7 +8,7 @@ image: {
   url: "/uploads/blog/finding-peace-in-prayer.webp",
   alt: "Person praying with Bible and journal"
 }
-tags: ["prayer", "devotional", "spiritual growth"]
+tags: ["Prayer", "Devotional", "Spiritual growth"]
 draft: false
 ---
 
