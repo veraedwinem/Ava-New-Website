@@ -1,9 +1,9 @@
 ---
-name: "Ps. Domingo Álvarez"
-title: "Querétaro"
-image: "/uploads/staff/michael-johnson.webp"
+name: "Ps. Pablo Lewis"
+title: "Michoacán"
+image: "/uploads/staff/Pablo-L.png"
 email: "michael.johnson@churchname.org"
-phone: "+1-555-0103"
+phone: ""
 bio: "Pastor Michael leads our vibrant youth ministry with energy and vision, helping young people discover their identity in Christ."
 order: 3
 draft: false

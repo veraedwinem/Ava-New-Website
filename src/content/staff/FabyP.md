@@ -3,8 +3,8 @@ name: "Ps. Faby Pérez"
 title: "Veracruz"
 image: "/uploads/staff/sarah-martinez.webp"
 email: "sarah.martinez@churchname.org"
-phone: "+1-555-0102"
-bio: "Pastor Sarah leads our women's ministry and provides pastoral care with a heart for discipleship and community building."
+phone: ""
+bio: "Mentora y consejera en liderazgo ministerial con enfoque en mujeres pastoras y líderes. Su ministerio, principalmente en línea, se centra en la organización personal, familiar y ministerial, promoviendo una vida basada en la relación con Dios antes de los roles y responsabilidades. Apasionada por animar a las mujeres a cumplir con los propósitos del Señor en su vida"
 order: 2
 draft: false
 ---
