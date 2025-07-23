@@ -6,8 +6,8 @@ Here are the operational hours for our church office and main activities:
 
 ### Church Office Hours
 
-*   **Monday - Friday:** 9:00 AM - 5:00 PM
-*   **Saturday:** 9:00 AM - 1:00 PM
+*   **Monday - Friday:** 9:00 AM - 3:00 PM
+*   **Saturday:** Closed (except for scheduled services/events)
 *   **Sunday & Public Holidays:** Closed (except for scheduled services/events)
 
 For urgent matters outside of office hours, please use the emergency contact number provided on our contact page.
