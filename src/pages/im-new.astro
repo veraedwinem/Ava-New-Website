@@ -15,13 +15,13 @@ import Button from "../components/UI/Button.astro";
     backgroundImage="/uploads/logo.webp"
   />
   
-  <!-- What to Expect -->
+   <!-- What to Expect -->
   <section class="py-16">
     <div class="container">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Primero</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Elije la actividad que más te interese y haz clic en el botón para obtener más información.
+          Conoce la actividad que más te interese y haz clic en el botón para obtener más información.
         </p>
       </div>
       
@@ -74,285 +74,118 @@ import Button from "../components/UI/Button.astro";
       </div>
     </div>
   </section>
-  
-  <!-- What to Wear -->
-  <section class="py-16 bg-gray-50">
-    <div class="container">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div>
-          <img 
-            src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800&h=600&fit=crop&crop=center" 
-            alt="Casual church attire" 
-            class="rounded-lg shadow-lg object-cover w-full h-full"
-          />
-        </div>
-        
-        <div>
-          <h2 class="text-3xl md:text-4xl font-bold mb-6">What to Wear</h2>
-          <p class="text-gray-700 mb-6 text-lg">
-            We want you to feel comfortable when you visit. You'll find people dressed in everything from casual (jeans and t-shirts) to business casual (slacks and button-ups or dresses).
-          </p>
-          <p class="text-gray-700 mb-6 text-lg">
-            Our priority is that you join us, not what you wear. Come as you are, and know you'll be welcomed warmly!
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Service Times -->
+  <!-- Sección: Próximos eventos -->
   <section class="py-16">
-    <div class="container">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Service Times</h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Join us for worship at any of our weekly services
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        <div class="bg-white p-8 rounded-lg shadow-sm">
-          <h3 class="text-xl font-bold mb-3">Sunday Morning</h3>
-          <div class="mb-4">
-            <p class="text-2xl font-bold text-primary-600 mb-2">8:00 AM</p>
-            <p class="text-gray-600">Traditional Service</p>
-            <p class="italic text-gray-500 mt-2">In-person & Livestream</p>
-          </div>
-          
-          <div>
-            <p class="text-2xl font-bold text-primary-600 mb-2">10:30 AM</p>
-            <p class="text-gray-600">Contemporary Service with Children's Ministry</p>
-            <p class="italic text-gray-500 mt-2">In-person only</p>
-          </div>
-        </div>
-        
-        <div class="bg-white p-8 rounded-lg shadow-sm">
-          <h3 class="text-xl font-bold mb-3">Wednesday Evening</h3>
-          <div class="mb-4">
-            <p class="text-2xl font-bold text-primary-600 mb-2">7:00 PM</p>
-            <p class="text-gray-600">Mid-week Prayer & Bible Study</p>
-            <p class="italic text-gray-500 mt-2">In-person & Livestream</p>
-          </div>
-          
-          <div>
-            <p class="text-2xl font-bold text-primary-600 mb-2">7:00 PM</p>
-            <p class="text-gray-600">Youth Group (Grades 6-12)</p>
-            <p class="italic text-gray-500 mt-2">In-person only</p>
-          </div>
-        </div>
-      </div>
+    <div class="container text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Próximos eventos</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+        Únete a nosotros en cualquiera de nuestras reuniones.
+      </p>
+
+      <a
+        href="/events"
+        class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-primary-700 transition"
+      >
+        Ver eventos
+      </a>
     </div>
   </section>
-  
-  <!-- For Kids -->
-  <section id="kids" class="py-16 bg-gray-50">
-    <div class="container">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 class="text-3xl md:text-4xl font-bold mb-6">For Families with Children</h2>
-          <p class="text-gray-700 mb-6 text-lg">
-            We love children and believe they are an important part of our church family. Here's what we offer for kids:
-          </p>
-          
-          <ul class="space-y-4 mb-6">
-            <li class="flex items-start">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              <span class="text-gray-700">
-                <strong>Nursery (0-2 years):</strong> Safe, loving care for our littlest ones during all services.
-              </span>
-            </li>
-            <li class="flex items-start">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              <span class="text-gray-700">
-                <strong>Preschool (3-5 years):</strong> Age-appropriate activities, Bible stories, and fun during the 10:30 AM service.
-              </span>
-            </li>
-            <li class="flex items-start">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              <span class="text-gray-700">
-                <strong>Elementary (K-5th grade):</strong> Interactive lessons, games, and worship during the 10:30 AM service.
-              </span>
-            </li>
-          </ul>
-          
-          <p class="text-gray-700 mb-6 text-lg">
-            All our children's ministry volunteers undergo background checks and are trained to provide a safe, nurturing environment.
-          </p>
-          
-          <Button href="/ministries/childrens-ministry">
-            Learn More About Children's Ministry
-          </Button>
-        </div>
-        
-        <div>
-          <img 
-            src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&h=600&fit=crop&crop=center" 
-            alt="Children at our church" 
-            class="rounded-lg shadow-lg object-cover w-full h-full"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Location & Directions -->
+
+  <!-- Sección: Ubicación -->
   <section id="location" class="py-16">
     <div class="container">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Location & Directions</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Cómo llegar?</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          We're easy to find and have plenty of parking
+          Es fácil encontrarnos y contamos con amplio estacionamiento.
         </p>
       </div>
-      
+
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <div class="bg-gray-200 rounded-lg overflow-hidden h-96">
-            <!-- Placeholder for Google Maps iframe -->
-            <div class="w-full h-full flex items-center justify-center bg-gray-300">
-              <p class="text-gray-600 text-center p-4">
-                Google Maps embed would go here<br>
-                <span class="text-sm">(For privacy reasons, not included in the template)</span>
-              </p>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.372209254644!2d-101.14855879999999!3d19.696771399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d1129b2e4cb29%3A0x43709b8aacb602d9!2sAlianza%20Vida%20Abundante%2C%20A.R.!5e0!3m2!1sen!2smx!4v1753382790738!5m2!1sen!2smx"
+              width="100%" height="100%" style="border:0;" allowfullscreen=""
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-        
+
         <div>
           <div class="bg-white p-8 rounded-lg shadow-sm h-full">
-            <h3 class="text-xl font-bold mb-4">Church Address</h3>
-            <address class="not-italic mb-6 text-gray-700">
-              <p class="text-lg">123 Main Street</p>
-              <p class="text-lg">Anytown, ST 12345</p>
+            <h3 class="text-xl font-bold mb-4">Dirección</h3>
+            <address class="not-italic text-gray-700 mb-6">
+              <p class="text-lg">Chicalote 220</p>
+              <p class="text-lg">Morelia, Mich. CP 58256</p>
               <p class="mt-2">
-                <a href="tel:+15551234567" class="text-primary-600 hover:text-primary-700">
-                  (555) 123-4567
-                </a>
+                <a href="tel:+5215551234567" class="text-primary-600 hover:text-primary-700">+52 443 285 4847</a>
               </p>
             </address>
-            
-            <h4 class="text-lg font-bold mb-2">Parking Information</h4>
-            <p class="text-gray-700 mb-6">
-              We have a large parking lot on the north side of the building with designated visitor parking near the main entrance. Handicap parking is available near both the north and south entrances.
+
+            <h4 class="text-lg font-bold mb-2">Estacionamiento</h4>
+            <p class="text-gray-700 mb-4">
+              Contamos con espacios reservados para visitantes y personas con discapacidad cerca de las entradas principales.
             </p>
-            
-            <h4 class="text-lg font-bold mb-2">Public Transportation</h4>
-            <p class="text-gray-700 mb-6">
-              Bus lines 10 and 14 stop directly in front of our building. The nearest subway station is Central Station, a 10-minute walk from our church.
-            </p>
-            
-            <Button href="https://maps.google.com/?q=123+Main+Street,+Anytown,+ST+12345" target="_blank" variant="primary">
-              Get Directions
+
+            <Button href="https://maps.google.com/?q=Av.+Principal+123" target="_blank" variant="primary">
+              Ver en el mapa
             </Button>
           </div>
         </div>
       </div>
     </div>
   </section>
-  
-  <!-- FAQ Section -->
-  <section id="faq" class="py-16 bg-gray-50">
-  <div class="container">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-        Answers to common questions from first-time visitors
-      </p>
+<!-- Sección: Preguntas frecuentes -->
+<section id="faq" class="py-16 bg-gray-50">
+  <div class="container text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Preguntas frecuentes</h2>
+    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Respuestas para quienes nos visitan por primera vez</p>
+  </div>
+
+  <div class="max-w-4xl mx-auto space-y-8 text-left">
+    <div>
+      <h3 class="text-xl font-semibold text-gray-800">¿Qué es Alianza Vida Abundante?</h3>
+      <p class="text-gray-600 mt-2">AVA es una organización cristiana que sirve a iglesias, líderes y ministerios de diferentes denominaciones. A través de recursos, formación, mentoría y alianzas estratégicas, buscamos fortalecer el cuerpo de Cristo en América Latina y más allá.</p>
     </div>
 
-    <div class="max-w-4xl mx-auto">
-      <div class="space-y-4">
-        <details class="group bg-white p-6 rounded-lg shadow-sm">
-          <summary class="flex justify-between items-center cursor-pointer">
-            <h3 class="text-xl font-bold">Where do I go when I arrive?</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform transition-transform duration-200 group-open:rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-            </svg>
-          </summary>
-          <p class="mt-4 text-gray-700">
-            When you arrive, look for our welcome team members wearing blue name tags. They'll greet you, help you check in your children if needed, and direct you to the sanctuary or any other areas you'd like to visit.
-          </p>
-        </details>
+    <div>
+      <h3 class="text-xl font-semibold text-gray-800">¿AVA pertenece a alguna denominación?</h3>
+      <p class="text-gray-600 mt-2">No. AVA es una red interdenominacional. Colaboramos con pastores y líderes de diversas tradiciones evangélicas, manteniendo como base común la centralidad de la Palabra de Dios y el señorío de Jesucristo.</p>
+    </div>
 
-        <details class="group bg-white p-6 rounded-lg shadow-sm">
-          <summary class="flex justify-between items-center cursor-pointer">
-            <h3 class="text-xl font-bold">Will I be asked to stand up or introduce myself?</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform transition-transform duration-200 group-open:rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-            </svg>
-          </summary>
-          <p class="mt-4 text-gray-700">
-            No, we won't single you out or ask you to stand up. We want you to feel comfortable, not put on the spot. We do have a welcome card in the service bulletin if you'd like to share your information with us.
-          </p>
-        </details>
+    <div>
+      <h3 class="text-xl font-semibold text-gray-800">¿Puedo asistir a un evento aunque no sea parte de una iglesia?</h3>
+      <p class="text-gray-600 mt-2">Sí. Nuestros eventos están abiertos a toda persona interesada en crecer espiritualmente o servir con mayor eficacia en el Reino de Dios. Algunos espacios están especialmente dirigidos a líderes, pero todos son bienvenidos.</p>
+    </div>
 
-        <details class="group bg-white p-6 rounded-lg shadow-sm">
-          <summary class="flex justify-between items-center cursor-pointer">
-            <h3 class="text-xl font-bold">Is there a coffee hour or fellowship time?</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform transition-transform duration-200 group-open:rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-            </svg>
-          </summary>
-          <p class="mt-4 text-gray-700">
-            Yes! We have coffee, tea, and light refreshments available before and after each service in our fellowship hall. It's a great opportunity to meet people and ask any questions you might have.
-          </p>
-        </details>
+    <div>
+      <h3 class="text-xl font-semibold text-gray-800">¿Cómo puedo vincularme con AVA?</h3>
+      <p class="text-gray-600 mt-2">Puedes iniciar como amigo o interesado, participar en eventos, recibir mentoría o postularte para formar parte de nuestra membresía ministerial. Contamos con un proceso claro de vinculación que incluye entrevistas, acompañamiento y formación.</p>
+    </div>
 
-        <details class="group bg-white p-6 rounded-lg shadow-sm">
-          <summary class="flex justify-between items-center cursor-pointer">
-            <h3 class="text-xl font-bold">Do you have facilities for nursing mothers?</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform transition-transform duration-200 group-open:rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-            </svg>
-          </summary>
-          <p class="mt-4 text-gray-700">
-            Yes, we have a comfortable, private nursing mothers' room adjacent to the nursery. It's equipped with changing facilities, comfortable seating, and a live audio feed of the service.
-          </p>
-        </details>
-
-        <details class="group bg-white p-6 rounded-lg shadow-sm">
-          <summary class="flex justify-between items-center cursor-pointer">
-            <h3 class="text-xl font-bold">How do I get connected beyond Sunday services?</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform transition-transform duration-200 group-open:rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-            </svg>
-          </summary>
-          <p class="mt-4 text-gray-700">
-            The best way to get connected is through our small groups and ministry teams. Visit our welcome center after the service, and we'll help you find the right fit. You can also attend our "New to Church Name" class, offered monthly.
-          </p>
-        </details>
-      </div>
+    <div>
+      <h3 class="text-xl font-semibold text-gray-800">¿Ofrecen asesoría o recursos para iglesias?</h3>
+      <p class="text-gray-600 mt-2">Sí. AVA dispone de un directorio de asesores ministeriales, materiales formativos y acompañamiento pastoral. Puedes contactarnos a través del formulario en nuestro sitio web para recibir orientación según tu contexto.</p>
     </div>
   </div>
 </section>
-  
-  <!-- Plan Your Visit CTA -->
-  <section id="volunteer" class="py-20 bg-cover bg-center text-white"
-    style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/uploads/visit-us.webp"
-  >
-    <div class="container">
-      <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to Visit?</h2>
-        <p class="text-xl mb-8">
-          We look forward to meeting you this Sunday. If you have any questions before your visit, please don't hesitate to contact us.
-        </p>
-        
-        <div class="flex flex-wrap justify-center gap-4">
-          <Button href="/contact" variant="primary" size="lg">
-            Contact Us
-          </Button>
-          
-          <Button href="https://maps.google.com/?q=123+Main+Street,+Anytown,+ST+12345" target="_blank" variant="outline" size="lg" class="bg-white/10 text-white border-white hover:bg-white hover:text-gray-900 backdrop-blur-sm">
-            Get Directions
-          </Button>
-        </div>
-      </div>
-    </div>
+
+
+    <!-- Aquí van los <details> de FAQ, puedes conservar los originales y traducirlos -->
   </section>
+
+  <!-- CTA final -->
+<section id="volunteer" class="py-20 bg-cover bg-center text-white" style="background-image: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/uploads/events-header-bg.webp);">
+  <div class="container text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6"></h2>
+    <p class="text-xl mb-8">Estamos disponibles para recibirte con gusto en nuestras oficinas o responder cualquier consulta sobre eventos, mentoría o alianzas ministeriales.</p>
+
+    <div class="flex flex-wrap justify-center gap-4">
+      <Button href="/contact" variant="primary" size="lg">Contáctanos</Button>
+      <Button href="https://maps.google.com/?q=Av.+Principal+123" target="_blank" variant="outline" size="lg" class="bg-white/10 text-white border-white hover:bg-white hover:text-gray-900 backdrop-blur-sm">
+        Cómo llegar
+      </Button>
+    </div>
+  </div>
+</section>
 </BaseLayout>

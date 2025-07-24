@@ -4,8 +4,8 @@ title: "Michoacán"
 image: "/uploads/staff/Pablo-L.png"
 email: "michael.johnson@churchname.org"
 phone: ""
-bio: "Pastor Michael leads our vibrant youth ministry with energy and vision, helping young people discover their identity in Christ."
-order: 3
+bio: "Pastor Michael leads our vibrant youth ministry with energy and vision, helping young people discover their identity in Christ"
+order: 6
 draft: false
 ---
 

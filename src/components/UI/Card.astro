@@ -7,18 +7,40 @@ export interface Props {
   };
   href?: string;
   className?: string;
+  // Nuevos props para filtros
+  dataTitle?: string;
+  dataDescription?: string;
+  dataAuthor?: string;
+  dataTags?: string;
+  dataDate?: string;
 }
 
-const { title, image, href, className = "" } = Astro.props;
+const {
+  title,
+  image,
+  href,
+  className = "",
+  dataTitle,
+  dataDescription,
+  dataAuthor,
+  dataTags,
+  dataDate
+} = Astro.props;
+
 const Element = href ? "a" : "div";
 ---
 
 <Element
   href={href}
   class={`card relative overflow-hidden group ${className}`}
+  data-title={dataTitle}
+  data-description={dataDescription}
+  data-author={dataAuthor}
+  data-tags={dataTags}
+  data-date={dataDate}
 >
   {image && (
-    <!-- full-cover image -->
+    <!-- Imagen de fondo -->
     <div class="absolute inset-0 overflow-hidden">
       <img
         src={image.src}
@@ -28,7 +50,7 @@ const Element = href ? "a" : "div";
     </div>
   )}
 
-  <!-- konten di atas gambar -->
+  <!-- Contenido sobre la imagen -->
   <div class="relative p-5">
     <h3 class="mb-2 text-xl font-bold">{title}</h3>
     <div class="text-gray-700">

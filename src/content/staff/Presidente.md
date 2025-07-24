@@ -4,7 +4,7 @@ title: "Presidente de AVA"
 image: "/uploads/staff/john-smith.webp"
 email: "johnspyker@alianzava.com"
 phone: ""
-bio: "Juan Spyker es fundador y presidente de Alianza Vida Abundante, con más de 50 años de experiencia pastoral. Tras pastorear durante dos décadas la iglesia Más Vida en Morelia, recibió de Dios el llamado a formar y acompañar a otros ministros. Su vida refleja una pasión constante por edificar la Iglesia y levantar nuevas generaciones de líderes."
+bio: "Juan Spyker es fundador y presidente de Alianza Vida Abundante, con más de 50 años de experiencia pastoral. Tras pastorear durante dos décadas la iglesia Más Vida, recibió de Dios el llamado a formar y acompañar a otros ministros. Su vida refleja una pasión constante por edificar la Iglesia y levantar nuevas generaciones de líderes."
 order: 1
 draft: false
 ---
