@@ -4,8 +4,8 @@ title: "Guerrero"
 image: "/uploads/staff/david-wilson.webp"
 email: "david.wilson@churchname.org"
 phone: ""
-bio: "David leads our worship ministry with passion and excellence, bringing over 15 years of experience in church music."
-order: 4
+bio: "Pastor principal de la Iglesia El Camino y fundador del Centro Cristiano Alcance Familiar en La Unión, Guerrero. Con más de 20 años de experiencia, se ha distinguido como conferencista, consejero familiar y mentor de equipos ministeriales, destacando por su pasión por la presencia de Dios y el desarrollo integral del líder cristiano."
+order: 3
 draft: false
 ---
 
