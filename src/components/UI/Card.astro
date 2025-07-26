@@ -27,12 +27,11 @@ const {
   dataDate
 } = Astro.props;
 
-const Element = href ? "a" : "div";
+const Element = "div";
 ---
 
-<Element
-  href={href}
-  class={`card relative overflow-hidden group ${className}`}
+<div
+  class={`blog-card card flex flex-col w-auto overflow-hidden group ${className}`}
   data-title={dataTitle}
   data-description={dataDescription}
   data-author={dataAuthor}
@@ -41,20 +40,20 @@ const Element = href ? "a" : "div";
 >
   {image && (
     <!-- Imagen de fondo -->
-    <div class="absolute inset-0 overflow-hidden">
+    <div class="inset-0 overflow-hidden w-full">
       <img
         src={image.src}
         alt={image.alt}
-        class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+        class="w-full h-auto object-cover object-center transition-transform duration-300 group-hover:scale-105"
       />
     </div>
   )}
 
-  <!-- Contenido sobre la imagen -->
   <div class="relative p-5">
     <h3 class="mb-2 text-xl font-bold">{title}</h3>
     <div class="text-gray-700">
       <slot />
     </div>
   </div>
-</Element>
+</div>
+
