@@ -89,7 +89,7 @@ const isFutureEvent = new Date(entry.data.date) > new Date();
             <p class="mb-4">Registration is required for this event.</p>
             
             {entry.data.registrationLink ? (
-              <Button href={entry.data.registrationLink} target="_blank" variant="primary">
+              <Button href="https://api.whatsapp.com/message/3KXK5UW2PPXVF1?autoload=1&app_absent=0" target="_blank" variant="primary">
                 Register Now
               </Button>
             ) : (
