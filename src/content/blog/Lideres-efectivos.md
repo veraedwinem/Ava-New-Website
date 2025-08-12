@@ -1,5 +1,5 @@
 ---
-title: "Como prepararlíderes efectivos para cada ministerio de su Iglesia."
+title: "Como preparar líderes efectivos para cada ministerio de su Iglesia."
 slug: "lideres-efectivos"
 pubDate: 2025-08-11
 description: "Orientaciones para la preparación previa y la ceremonia de instalación, tanto de líderes ministeriales como de pastores, con pasos claros, encomiendas bíblicas, votos ministeriales y oraciones de consagración."
@@ -13,7 +13,7 @@ draft: false
 ---
 
 
-# Como prepararlíderes efectivos para cada ministerio de su Iglesia
+# Como preparar líderes efectivos para cada ministerio de su Iglesia
 Todo pastor exitoso necesita un buen equipo de lideres a su alrededor. Solo será tan fuerte y efectivo como su equipo de lideres y colaboradores.
 
 El pastor que va comenzando necesita escoger, habiendo orado, estudiado y consultado con su mentor o cobertura, un modelo de organización de su iglesia en el que decida trabajar con ciertos ministerios.
@@ -32,8 +32,8 @@ Un ejemplo sería comenzar el curso y el proceso de selección con un grupo más
 
 #### El grupo reducido que califique será escogido dependiendo de: 
 - Su aprovechamiento del curso “LIDERES– 1”. 
-- La información delCUESTIONARIOllenado al inicio. 
-- La evaluación del librito “CONOCETU DON”(o algún test de personalidad o habilidades que sea similar). 
+- La información del CUESTIONARIO llenado al inicio. 
+- La evaluación del librito “CONOCE TU DON”(o algún test de personalidad o habilidades que sea similar). 
 - La DECISIÓN DEL PASTOR (de preferencia tomando en cuenta la opinión de una o dos personas que conocen al candidato) 
 
 Entonces a los del grupo reducido que se haya seleccionado se les dará el siguiente curso más completo sobre el liderazgo – “LIDERES – 2”.
