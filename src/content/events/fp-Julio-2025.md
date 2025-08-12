@@ -1,6 +1,6 @@
 ---
 title: "Formación Pastoral Agosto 2025"
-date: 2025-08-14
+date: 2025-08-13
 time: "9:00 AM – 2:00 PM"
 location: "Más Vida Cumbres"
 image: "/uploads/events/fp_Julio25.jpg"

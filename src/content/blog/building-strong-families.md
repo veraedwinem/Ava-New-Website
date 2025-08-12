@@ -3,7 +3,7 @@ title: "La Atención Personal Determina el Éxito"
 slug: "la-atencion-personal-determinael-exito"
 pubDate: 2025-07-10
 description: "Reflexione sobre cómo el amor y el cuidado personal determinan el éxito en iglesias, empresas y familias, a través de principios bíblicos y prácticos."
-author: "Ps. Juan Spyker"
+author: "Dr. John Spyker"
 image: {
   url: "/uploads/blog/building-strong-families.webp",
   alt: "Ps. Juan enseñando"

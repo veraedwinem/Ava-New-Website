@@ -56,6 +56,7 @@ const isFutureEvent = new Date(entry.data.date) > new Date();
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <h3 class="text-lg font-bold mb-2">Fecha y Hora</h3>
+<<<<<<< HEAD
           <div class="flex items-start mb-2 justify-start">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -70,6 +71,11 @@ const isFutureEvent = new Date(entry.data.date) > new Date();
                 stroke-width="2"
                 d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
               ></path>
+=======
+          <div class="flex items-start mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 mt-0.5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+>>>>>>> josue/dev
             </svg>
             <div class="flex flex-col justify-start !m-0">
               {
@@ -87,7 +93,11 @@ const isFutureEvent = new Date(entry.data.date) > new Date();
         </div>
 
         <div>
+<<<<<<< HEAD
           <h3 class="text-lg font-bold mb-2">Ubicación</h3>
+=======
+          <h3 class="text-lg font-bold mb-2">Lugar</h3>
+>>>>>>> josue/dev
           <div class="flex items-start">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -117,6 +127,7 @@ const isFutureEvent = new Date(entry.data.date) > new Date();
         isFutureEvent && entry.data.registrationRequired && (
           <div class="mt-6 pt-6 border-t border-gray-200">
             <h3 class="text-lg font-bold mb-3">Registro</h3>
+<<<<<<< HEAD
             <p class="mb-4">Es necesario registrarse para este evento.</p>
 
             {entry.data.registrationLink ? (
@@ -134,6 +145,17 @@ const isFutureEvent = new Date(entry.data.date) > new Date();
                 class="!text-white"
               >
                 Contáctanos para registrate <FaWhatsapp className="text-white text-xl"/>
+=======
+            <p class="mb-4">Se requiere registro para este evento.</p>
+
+            {entry.data.registrationLink ? (
+              <Button href="https://api.whatsapp.com/message/3KXK5UW2PPXVF1?autoload=1&app_absent=0" target="_blank" variant="primary">
+                Regístrate Ahora
+              </Button>
+            ) : (
+              <Button href="https://api.whatsapp.com/message/3KXK5UW2PPXVF1?autoload=1&app_absent=0" variant="primary">
+                Contáctanos para Registrarte
+>>>>>>> josue/dev
               </Button>
             )}
           </div>
@@ -161,10 +183,19 @@ const isFutureEvent = new Date(entry.data.date) > new Date();
           </Button>
         )
       }
+<<<<<<< HEAD
 
       <Button href="/events" variant="outline"> Regresar a todos los eventos </Button>
 
       <Button href="/contact?subject=Event+Inquiry" variant="outline">
+=======
+      
+      <Button href="/events" variant="outline">
+        Volver a Todos los Eventos
+      </Button>
+      
+      <Button href="https://api.whatsapp.com/message/3KXK5UW2PPXVF1?autoload=1&app_absent=0" variant="outline">
+>>>>>>> josue/dev
         ¿Preguntas? Contáctanos
       </Button>
     </div>
