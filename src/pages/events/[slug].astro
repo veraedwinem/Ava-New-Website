@@ -52,7 +52,7 @@ const isFutureEvent = new Date(entry.data.date) > new Date();
     <div class="bg-gray-50 rounded-lg p-6 mb-8">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <h3 class="text-lg font-bold mb-2">Date & Time</h3>
+          <h3 class="text-lg font-bold mb-2">Fecha y Hora</h3>
           <div class="flex items-start mb-2">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 mt-0.5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -71,7 +71,7 @@ const isFutureEvent = new Date(entry.data.date) > new Date();
         </div>
         
         <div>
-          <h3 class="text-lg font-bold mb-2">Location</h3>
+          <h3 class="text-lg font-bold mb-2">Lugar</h3>
           <div class="flex items-start">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 mt-0.5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -85,16 +85,16 @@ const isFutureEvent = new Date(entry.data.date) > new Date();
       {
         isFutureEvent && entry.data.registrationRequired && (
           <div class="mt-6 pt-6 border-t border-gray-200">
-            <h3 class="text-lg font-bold mb-3">Registration</h3>
-            <p class="mb-4">Registration is required for this event.</p>
-            
+            <h3 class="text-lg font-bold mb-3">Registro</h3>
+            <p class="mb-4">Se requiere registro para este evento.</p>
+
             {entry.data.registrationLink ? (
               <Button href="https://api.whatsapp.com/message/3KXK5UW2PPXVF1?autoload=1&app_absent=0" target="_blank" variant="primary">
-                Register Now
+                Regístrate Ahora
               </Button>
             ) : (
-              <Button href="/contact?subject=Event+Registration" variant="primary">
-                Contact Us to Register
+              <Button href="https://api.whatsapp.com/message/3KXK5UW2PPXVF1?autoload=1&app_absent=0" variant="primary">
+                Contáctanos para Registrarte
               </Button>
             )}
           </div>
@@ -118,11 +118,11 @@ const isFutureEvent = new Date(entry.data.date) > new Date();
       }
       
       <Button href="/events" variant="outline">
-        Back to All Events
+        Volver a Todos los Eventos
       </Button>
       
-      <Button href="/contact?subject=Event+Inquiry" variant="outline">
-        Questions? Contact Us
+      <Button href="https://api.whatsapp.com/message/3KXK5UW2PPXVF1?autoload=1&app_absent=0" variant="outline">
+        ¿Preguntas? Contáctanos
       </Button>
     </div>
   </PostLayout>
