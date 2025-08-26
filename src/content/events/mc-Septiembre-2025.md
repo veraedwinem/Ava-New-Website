@@ -1,41 +1,38 @@
 ---
 title: "Masterclass Septiembre 2025"
-date: 2025-09-11
+date: 2025-09-10
 time: "10:00 AM"
 location: "Streaming"
 image: "/uploads/events/mc-Septiembre-2025.png"
-summary: "Un espacio especial para buscar enseñanza y comunidad por igual. Durante este encuentro, Dios nos prepara con enseñanza y ánimo frescos, y nos alegra con la compañía ministerial más especial."
+summary: "Diseñado para profundizar en principios y herramientas ministeriales. En este tiempo, Dios nos equipa con claridad y dirección práctica, y nos fortalece al compartir con una comunidad de líderes apasionados por servir."
 tags: ["formación pastoral", "liderazgo", "ministerio"]
-registrationRequired: true
+registrationRequired: false
 draft: false
 ---
 
-## Formación pastoral continua
+## Masterclass
 
-Nuestra Formación Pastoral está dirigida a pastores en funciones, aspirantes al ministerio, líderes de iglesias, servidores comprometidos y toda persona llamada a pastorear, acompañar espiritualmente o servir en contextos ministeriales. Buscamos ofrecer un proceso formativo integral —teológico, práctico y espiritual— que fortalezca el carácter, afiance la doctrina y equipe para un servicio pastoral relevante, bíblicamente fundamentado y transformador en el contexto contemporáneo.
+Nuestra Masterclass Ministerial está dirigida a pastores, líderes emergentes, equipos de servicio y toda persona interesada en profundizar en temas claves del ministerio. Se trata de una jornada intensiva diseñada para brindar perspectivas actuales, principios bíblicos aplicados y herramientas prácticas que impulsen un liderazgo más efectivo, relevante y transformador en el entorno eclesial y social contemporáneo.
 
 ### Contenido
 
-- **Fundamentos del liderazgo bíblico**
-- **Herramientas para la toma de decisiones espirituales**
-- **Dinámicas ministeriales efectivas**
-- **Espacios de diálogo y mentoría**
+- **Principios bíblicos para el ministerio en el siglo XXI**
+- **Herramientas prácticas para la gestión ministerial**
+- **Modelos de liderazgo y servicio colaborativo**
+- **Espacios de diálogo, análisis y aplicación**
 
 ### Detalles
 
-- 📅 **Fecha:** Jueves 14 de agosto de 2025  
-- 🕘 **Hora:** 9:00 AM a 2:00 PM  
-- 📍 **Lugar:** Más Vida Cumbres  
-- 🎟️ **Registro:** Requerido (más información próximamente)
+- 📅 **Fecha:** Jueves 10 de Septiembre de 2025  
+- 🕘 **Hora:** 10:00 AM  
+- 📍 **Lugar:** Más Vida Cumbres
 
 ### ¿Por qué asistir?
 
-Esta masterclass es parte de nuestra iniciativa de **Formación Pastoral**, con el propósito de:
-
-- Acompañar a líderes en su crecimiento  
-- Equipar a los ministros con principios sólidos  
-- Fortalecer la iglesia a través de líderes bien formados  
+- Potenciar habilidades de liderazgo y gestión
+- Inspirar con perspectivas bíblicas y prácticas
+- Conectar a líderes para el intercambio y la colaboración
+- Impulsar un ministerio con mayor impacto y relevancia
 
 ---
 
-**¡Te esperamos para seguir creciendo juntos!**
