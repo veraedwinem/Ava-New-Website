@@ -10,12 +10,49 @@ import StaffList from "../components/Sections/StaffList.astro";
   transition:name="nav-trans"
 >
   <PageHeader 
-    title="Mentores" 
-    subtitle="Conoce a nuestro equipo de mentores"
+    title="Mentoría" 
+    subtitle="Principio esencial de la mentoría"
     backgroundImage="/uploads/page-header-bg.webp"
   />
-  
 
+  <!-- Principio esencial de mentoría -->
+  <section class="py-16 bg-white">
+    <div class="container">
+      <div class="max-w-4xl mx-auto text-center">
+
+
+        
+
+        <p class="text-lg text-gray-700 mb-6 text-left">
+          En Alianza Vida Abundante creemos que la <strong>rendición de cuentas</strong> es un principio esencial de la mentoría. 
+          No se trata únicamente de un concepto administrativo o de gestión, sino de una práctica espiritual que refleja integridad, humildad y compromiso con el llamado de Dios.
+        </p>
+        <p class="text-lg text-gray-700 mb-4 text-left">Para un ministro cristiano —ya sea pastor o líder de iglesia— la rendición de cuentas implica:</p>
+        <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 mb-6 text-left">
+          <li>Sumisión a las autoridades espirituales que Dios ha establecido.</li>
+          <li>Ser enseñable, corregible e instruido con un corazón dispuesto.</li>
+          <li>Abrirse al consejo y la mentoría de quienes caminan delante en la fe.</li>
+          <li>Vivir en transparencia, honestidad y vulnerabilidad frente a quienes el Señor ha puesto como cobertura.</li>
+          <li>Practicar la humildad, no solo hacia las autoridades, sino también hacia la congregación y cada creyente al que se sirve.</li>
+        </ul>
+        <p class="text-lg text-gray-700 text-left">
+          La mentoría en la Alianza, basada en este principio, fortalece el carácter del ministro, fomenta relaciones de confianza 
+          y asegura un liderazgo sano, genuino y con frutos que glorifiquen a Cristo.
+        </p>
+
+        <!-- Espacio para imagen -->
+        <div class="mb-8">
+          <img 
+            src="/uploads/mentoring.jpg" 
+            alt="Ilustración de mentoría cristiana" 
+            class="rounded-2xl shadow-lg mx-auto"
+            style="margin-top: 44px;"
+          />
+        </div>
+        
+      </div>
+    </div>
+  </section>
 
   <!-- Contact Staff CTA -->
   <section class="py-16 bg-gray-50">
@@ -26,58 +63,50 @@ import StaffList from "../components/Sections/StaffList.astro";
           Si estás interesado en recibir mentoría, por favor completa el siguiente formulario.
         </p>
 
-<!-- JotForm Embed fijo -->
-<div id="jotFormContainer" class="my-12 transition-all duration-300 ease-in-out">
-  <iframe
-    id="JotFormIFrame-252334873257866"
-    title="Solicitud de Mentoría AVA"
-    allow="geolocation; microphone; camera; fullscreen; payment"
-    src="https://form.jotform.com/252334873257866"
-    frameborder="0"
-    style="min-width:100%;max-width:100%;border:none;min-height:80vh;"
-    scrolling="no"
-  ></iframe>
-</div>
+        <!-- JotForm Embed fijo -->
+        <div id="jotFormContainer" class="my-12 transition-all duration-300 ease-in-out">
+          <iframe
+            id="JotFormIFrame-252334873257866"
+            title="Solicitud de Mentoría AVA"
+            allow="geolocation; microphone; camera; fullscreen; payment"
+            src="https://form.jotform.com/252334873257866"
+            frameborder="0"
+            style="min-width:100%;max-width:100%;border:none;min-height:80vh;"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- Scripts -->
-<script is:inline>
-  document.addEventListener("DOMContentLoaded", () => {
-    const FORM_SELECTOR = "iframe#JotFormIFrame-252334873257866";
-    const JF_SRC = "https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js";
+  <!-- Scripts -->
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const FORM_SELECTOR = "iframe#JotFormIFrame-252334873257866";
+      const JF_SRC = "https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js";
 
-    async function ensureJotformScript() {
-      if (typeof window.jotformEmbedHandler === "function") return;
-      await new Promise((resolve, reject) => {
-        const s = document.createElement("script");
-        s.src = JF_SRC;
-        s.async = true;
-        s.onload = resolve;
-        s.onerror = reject;
-        document.head.appendChild(s);
-      });
-    }
-
-    async function initJotform() {
-      const el = document.querySelector(FORM_SELECTOR);
-      if (!el) return;
-      await ensureJotformScript();
-      window.jotformEmbedHandler(FORM_SELECTOR, "https://form.jotform.com/");
-    }
-
-    // Ajuste de altura
-    window.addEventListener("message", function(e) {
-      if (!e || typeof e.data !== "string") return;
-      const args = e.data.split(":");
-      if (args[0] === "setHeight") {
-        const iframe = document.querySelector(FORM_SELECTOR);
-        if (iframe) iframe.style.height = args[1] + "px";
+      async function ensureJotformScript() {
+        if (typeof window.jotformEmbedHandler === "function") return;
+        await new Promise((resolve, reject) => {
+          const s = document.createElement("script");
+          s.src = JF_SRC;
+          s.async = true;
+          s.onload = resolve;
+          s.onerror = reject;
+          document.head.appendChild(s);
+        });
       }
-    }, false);
 
-    // Inicializar siempre al cargar la página
-    initJotform();
-  });
-</script>
+      async function initJotform() {
+        const el = document.querySelector(FORM_SELECTOR);
+        if (!el) return;
+        await ensureJotformScript();
+        window.jotformEmbedHandler(FORM_SELECTOR, "https://form.jotform.com/");
+      }
 
+      // Inicializar siempre al cargar la página
+      initJotform();
+    });
+  </script>
 
 </BaseLayout>
