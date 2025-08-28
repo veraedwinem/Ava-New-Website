@@ -8,9 +8,24 @@ image: {
   url: "/uploads/blog/Lideres.jpg",
   alt: "Líderes siendo preparados"
 }
-tags: ["Ministerio", "Liderazgo", "Herramientas Pastorales"]
+tags: ["Liderazgo", "Herramientas Pastorales"]
 draft: false
 ---
+---------
+<div style="margin-top: 2rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+  <a
+    href="https://drive.google.com/file/d/1k1OkKIBPrF9dqv6sAFq5t0f-3h9gcWL2/view?usp=sharing"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="display: inline-block; background-color: #2563eb; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: bold; text-decoration: none; transition: background-color 0.3s ease;"
+    onmouseover="this.style.backgroundColor='#1d4ed8'"
+    onmouseout="this.style.backgroundColor='#2563eb'"
+  >
+    Descargar PDF
+  </a>
+</div>
+
+---------
 
 
 # Como preparar líderes efectivos para cada ministerio de su Iglesia
@@ -161,19 +176,3 @@ g. ¿Prometes estar dispuesto a rendir cuentas a los que están sobre ti en elSe
 Nota: Este documento puede variar dependiendo del ministerio; puede tener fecha de vencimiento o no; puede describir las responsabilidades encomendadas; puede mencionar su supervisor o pastor sobre él; u otras cosas. 
 9. La congregación puede felicitar al pastorrecién instalado 
 Herramientas pastorales Dr. John Spyker
-
-
-
-
-<div style="margin-top: 2rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-  <a
-    href="https://drive.google.com/file/d/1k1OkKIBPrF9dqv6sAFq5t0f-3h9gcWL2/view?usp=sharing"
-    target="_blank"
-    rel="noopener noreferrer"
-    style="display: inline-block; background-color: #2563eb; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: bold; text-decoration: none; transition: background-color 0.3s ease;"
-    onmouseover="this.style.backgroundColor='#1d4ed8'"
-    onmouseout="this.style.backgroundColor='#2563eb'"
-  >
-    Descargar PDF
-  </a>
-</div>

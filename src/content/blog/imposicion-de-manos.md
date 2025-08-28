@@ -8,9 +8,24 @@ image: {
   url: "/uploads/blog/ManosOrdenacion.jpg",
   alt: "Ps. Juan enseñando"
 }
-tags: ["Ministerio", "Ordenación", "Formación Pastoral"]
+tags: ["Ordenación", "Formación Pastoral"]
 draft: false
 ---
+-----
+<div style="margin-top: 2rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+  <a
+    href="https://drive.google.com/file/d/1tZjNKO63F3hBr7zPPkuXGleAkPm3WH3z/view?usp=sharing"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="display: inline-block; background-color: #2563eb; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: bold; text-decoration: none; transition: background-color 0.3s ease;"
+    onmouseover="this.style.backgroundColor='#1d4ed8'"
+    onmouseout="this.style.backgroundColor='#2563eb'"
+  >
+    Descargar PDF
+  </a>
+</div>
+
+-----
 
 
 ## La Imposición de Manos para Ordenación
@@ -109,19 +124,3 @@ En Hebreos 6:1–2 se menciona la **imposición de manos** como una enseñanza f
 La imposición de manos comunica autoridad y activa dones. Pero también establece **responsabilidad y sujeción**. Tanto el ordenado como quienes imponen manos deben comprender el peso espiritual y práctico de este acto.
 
 > “... y de la imposición de manos...” (Hebreos 6:2) no es solo una ceremonia, es un pacto de responsabilidad y servicio en el Reino de Dios.
-
-
-
-
-<div style="margin-top: 2rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-  <a
-    href="https://drive.google.com/file/d/1tZjNKO63F3hBr7zPPkuXGleAkPm3WH3z/view?usp=sharing"
-    target="_blank"
-    rel="noopener noreferrer"
-    style="display: inline-block; background-color: #2563eb; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: bold; text-decoration: none; transition: background-color 0.3s ease;"
-    onmouseover="this.style.backgroundColor='#1d4ed8'"
-    onmouseout="this.style.backgroundColor='#2563eb'"
-  >
-    Descargar PDF
-  </a>
-</div>

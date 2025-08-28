@@ -26,12 +26,10 @@ const {
   dataTags,
   dataDate
 } = Astro.props;
-
-const Element = "div";
 ---
 
 <div
-  class={`blog-card card flex flex-col w-auto overflow-hidden group ${className}`}
+  class={`blog-card card flex flex-col w-auto overflow-hidden bg-white rounded-lg group ${className}`}
   data-title={dataTitle}
   data-description={dataDescription}
   data-author={dataAuthor}
@@ -39,13 +37,22 @@ const Element = "div";
   data-date={dataDate}
 >
   {image && (
-    <!-- Imagen de fondo -->
     <div class="inset-0 overflow-hidden w-full">
-      <img
-        src={image.src}
-        alt={image.alt}
-        class="w-full h-auto object-cover object-center transition-transform duration-300 group-hover:scale-105"
-      />
+      {href ? (
+        <a href={href} class="block">
+          <img
+            src={image.src}
+            alt={image.alt}
+            class="w-full h-auto object-cover object-center transition-transform duration-300 group-hover:scale-105"
+          />
+        </a>
+      ) : (
+        <img
+          src={image.src}
+          alt={image.alt}
+          class="w-full h-auto object-cover object-center transition-transform duration-300 group-hover:scale-105"
+        />
+      )}
     </div>
   )}
 
@@ -56,4 +63,3 @@ const Element = "div";
     </div>
   </div>
 </div>
-

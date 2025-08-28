@@ -8,7 +8,7 @@ image: {
   url: "/uploads/blog/building-strong-families.webp",
   alt: "Ps. Juan enseñando"
 }
-tags: ["Ministerio", "Liderazgo", "Masterclass"]
+tags: ["Liderazgo", "Notas"]
 draft: false
 ---
 
