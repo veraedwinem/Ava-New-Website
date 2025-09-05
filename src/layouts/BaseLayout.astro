@@ -56,6 +56,14 @@ const {
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <ClientRouter />
+
+    <!-- Mailchimp Script -->
+    <script is:inline id="mcjs">
+      !function(c,h,i,m,p){
+        m=c.createElement(h),p=c.getElementsByTagName(h)[0],
+        m.async=1,m.src=i,p.parentNode.insertBefore(m,p)
+      }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/b9e5440e42390243cebf19d53/54eed70b9e04c675ce38da71e.js");
+    </script>
   </head>
   <body>
     <div class="flex flex-col min-h-screen">
@@ -63,7 +71,7 @@ const {
 
       <main class="flex-grow">
         <slot />
-         <Analytics />
+        <Analytics />
       </main>
 
       <Footer />

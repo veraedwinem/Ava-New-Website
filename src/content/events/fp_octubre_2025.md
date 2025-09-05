@@ -4,7 +4,7 @@ date: 2025-10-08
 time: "9:00 AM – 2:00 PM"
 location: "Más Vida Cumbres"
 image: "/uploads/events/fp_octubre_2025.png"
-summary: "Un espacio especial para buscar enseñanza y comunidad por igual. Durante este encuentro, Dios nos prepara con enseñanza y ánimo frescos, y nos alegra con la compañía ministerial más especial."
+summary: "Un espacio cada tercer mes, donde convivimos, compartimos alimentos y recibimos enseñanzas bíblicas y estratégicas y nos renovamos para continuar con nuestras responsabilidades."
 tags: ["formación pastoral", "liderazgo", "ministerio"]
 registrationRequired: true
 draft: false

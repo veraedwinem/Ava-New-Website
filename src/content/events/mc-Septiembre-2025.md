@@ -4,7 +4,7 @@ date: 2025-09-10
 time: "10:00 AM"
 location: "Streaming"
 image: "/uploads/events/mc-Septiembre-2025.png"
-summary: "Diseñado para profundizar en principios y herramientas ministeriales. En este tiempo, Dios nos equipa con claridad y dirección práctica, y nos fortalece al compartir con una comunidad de líderes apasionados por servir."
+summary: "Diseñado para servir a los líderes de iglesias y diversos ministerios con enseñanza práctica y aplicable para su vida y trabajo."
 tags: ["formación pastoral", "liderazgo", "ministerio"]
 registrationRequired: false
 draft: false
