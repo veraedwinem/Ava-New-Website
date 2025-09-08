@@ -7,18 +7,14 @@ export interface Props {
   backgroundImage?: string;
   ctaText?: string;
   ctaLink?: string;
-  secondaryCtaText?: string;
-  secondaryCtaLink?: string;
 }
 
 const {
-  title = "Welcome to Our Church",
-  subtitle = "A place of worship, community, and spiritual ",
+  title = "Bienvenido a Alianza Vida Abundante",
+  subtitle = "Ministros sanos, iglesias sanas.<br/>Iglesias sanas, comunidades sanas.",
   backgroundImage = "/uploads/church-default.webp",
-  ctaText = "Plan Your Visit",
-  ctaLink = "/im-new",
-  secondaryCtaText = "Watch Sermons",
-  secondaryCtaLink = "/sermons",
+  ctaText = "YouTube",
+  ctaLink = "https://www.youtube.com/channel/UCAondjOaylh84ktFbKsGw2g?sub_confirmation=1",
 } = Astro.props;
 ---
 
@@ -26,7 +22,6 @@ const {
   class="relative min-h-[70vh] flex items-center bg-cover pt-30"
   style={`background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${backgroundImage}); background-position: center 20%;`}
 >
-
   <div class="container">
     <div class="max-w-3xl text-white">
       <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">{title}</h1>
@@ -35,10 +30,6 @@ const {
       <div class="flex flex-wrap gap-4">
         <Button href={ctaLink} target="_blank" variant="primary" size="lg">
           {ctaText}
-        </Button>
-        
-        <Button href={secondaryCtaLink} target="_blank" variant="outline" size="lg" class="bg-white/10 text-white border-white hover:bg-white hover:text-gray-900 backdrop-blur-sm">
-          {secondaryCtaText}
         </Button>
       </div>
     </div>
