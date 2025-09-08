@@ -7,6 +7,19 @@ import Button from "../components/UI/Button.astro";
 ---
 
 <BaseLayout transition:name="nav-trans">
+  <Fragment slot="head">
+    <!-- Script de Mailchimp solo para index -->
+    <script id="mcjs" is:inline>
+      !function(c,h,i,m,p){
+        m=c.createElement(h),
+        p=c.getElementsByTagName(h)[0],
+        m.async=1,
+        m.src=i,
+        p.parentNode.insertBefore(m,p)
+      }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/b9e5440e42390243cebf19d53/54eed70b9e04c675ce38da71e.js");
+    </script>
+  </Fragment>
+
   <HeroSection 
     title="Bienvenido a Alianza Vida Abundante"
     subtitle="Ministros sanos, iglesias sanas.</br>Iglesias sanas, comunidades sanas."
@@ -27,9 +40,11 @@ import Button from "../components/UI/Button.astro";
           <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
             <h3 class="text-xl font-bold mb-3">Masterclass</h3>
             <p class="text-2xl font-bold text-primary-600 mb-2"></p>
-            <p class="text-gray-600 mb-4">Sesiones intensivas y prácticas enfocadas en liderazgo bíblico, 
+            <p class="text-gray-600 mb-4">
+              Sesiones intensivas y prácticas enfocadas en liderazgo bíblico, 
               diseñadas para equipar a ministros y líderes cristianos con herramientas aplicables dentro y fuera del ministerio. 
-            Abordamos temas actuales desde una perspectiva bíblica y estratégica.</p>
+              Abordamos temas actuales desde una perspectiva bíblica y estratégica.
+            </p>
             <div class="flex justify-center">
               <iframe 
                 src="https://www.youtube.com/embed/videoseries?list=PLxnZIeiBlkVjq_92c_W4sUo58nPgd8mFg" 
@@ -43,7 +58,11 @@ import Button from "../components/UI/Button.astro";
           <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
             <h3 class="text-xl font-bold mb-3">Formación pastoral</h3>
             <p class="text-2xl font-bold text-primary-600 mb-2"></p>
-            <p class="text-gray-600 mb-4">Proceso de capacitación continua que busca fortalecer el llamado pastoral mediante enseñanza bíblica sólida, desarrollo de carácter ministerial y acompañamiento. A través de este proceso, forma también una comunidad ministerial comprometida, y camina unida hacia la edificación de iglesias.</p>
+            <p class="text-gray-600 mb-4">
+              Proceso de capacitación continua que busca fortalecer el llamado pastoral mediante enseñanza bíblica sólida, 
+              desarrollo de carácter ministerial y acompañamiento. A través de este proceso, forma también una comunidad ministerial comprometida, 
+              y camina unida hacia la edificación de iglesias.
+            </p>
             <p class="italic text-gray-500"></p>
 
             <div class="flex justify-center">
@@ -54,11 +73,13 @@ import Button from "../components/UI/Button.astro";
                 allowfullscreen>
               </iframe>
             </div>
-
           </div>
         </div>
 
-        <Button target="_blank" href="https://api.whatsapp.com/message/3KXK5UW2PPXVF1?autoload=1&app_absent=0" variant="outline">
+        <Button 
+          target="_blank" 
+          href="https://api.whatsapp.com/message/3KXK5UW2PPXVF1?autoload=1&app_absent=0" 
+          variant="outline">
           Quiero ser parte
         </Button>
       </div>
@@ -80,9 +101,11 @@ import Button from "../components/UI/Button.astro";
         <div>
           <h2 class="text-3xl md:text-4xl font-bold mb-6">Quiénes somos</h2>
           <p class="text-gray-700 mb-6 text-lg">
-            Alianza Vida Abundante (AVA) es una comunidad de pastores comprometidos con edificar y fortalecer a pastores, líderes e iglesias en todo el mundo hispano. A través del seguimiento cercano a cada pastor, buscamos formar ministerios saludables que reflejen el carácter de Cristo y extiendan Su Reino, brindando mentoría personalizada y espacios de capacitación continua para el liderazgo y el ministerio, con el fin de equipar a siervos fieles que sirvan con excelencia.
+            Alianza Vida Abundante (AVA) es una comunidad de pastores comprometidos con edificar y fortalecer a pastores, líderes e iglesias en todo el mundo hispano. 
+            A través del seguimiento cercano a cada pastor, buscamos formar ministerios saludables que reflejen el carácter de Cristo y extiendan Su Reino, 
+            brindando mentoría personalizada y espacios de capacitación continua para el liderazgo y el ministerio, 
+            con el fin de equipar a siervos fieles que sirvan con excelencia.
           </p>
-          
           
           <Button href="/about-us">
             Misión y Visión
@@ -95,83 +118,9 @@ import Button from "../components/UI/Button.astro";
   <!-- Events Section -->
   <EventList />
   
-  <!-- Ministries Preview -->
-  <section class="py-16 bg-gray-50">
-    <div class="container">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestras actividades</h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Descubre cómo puedes conocer, conectar y formar parte de AVA.
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="card text-center p-8">
-          <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-primary-100 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="#3e45b5">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold mb-3">Formación Pastoral</h3>
-          <p class="text-gray-700 mb-4">
-            Formación Pastoral dirigida a pastores en funciones, aspirantes al ministerio, líderes de iglesias, servidores comprometidos y toda persona llamada a pastorear, acompañar espiritualmente o servir en contextos ministeriales., con el propósito de fortalecer a los edificadores mediante enseñanza bíblica, ministración espiritual y espacios de comunidad ministerial.
-          </p>
-          <a href="https://www.youtube.com/watch?v=jpBKY1kZDVA&list=PLxnZIeiBlkVj3jY2k6p1BnhXk1tJkt80v" class="text-primary-600 font-medium hover:text-primary-700" target="_blank">
-            Ver última Formación Pastoral →
-          </a>
-        </div>
-        
-        <div class="card text-center p-8">
-          <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-accent-100 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-secondary-600" fill="none" viewBox="0 0 24 24" stroke="#f76c33">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M3 4a1 1 0 011-1h16a1 1 0 011 1v12a1 1 0 01-1 1h-7v3h3m-6 0h3m-3 0H9m6-8h2a1 1 0 000-2h-2v2zM5 13h6v-2H5v2z" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold mb-3">Masterclass</h3>
-          <p class="text-gray-700 mb-4">
-            Masterclass es un espacio de desarrollo dirigido a líderes que edifican el Reino de Dios dentro y fuera de la iglesia. A través de enseñanzas profundas y aplicadas, el pastor Juan Spyker expone principios bíblicos, ayudando a los líderes a crecer más.
-          </p>
-          <a href="https://www.youtube.com/watch?v=KQ6egltT5Jc&list=PLxnZIeiBlkVjq_92c_W4sUo58nPgd8mFg" class="text-primary-600 font-medium hover:text-primary-700" target="_blank">
-            Ver última Masterclass →
-          </a>
-        </div>
-        
-        <div class="card text-center p-8">
-          <div class="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: #e8d5af;">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-accent-600" fill="none" viewBox="0 0 24 24" stroke="#7a6254">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold mb-3">Conferencia Fiel</h3>
-          <p class="text-gray-700 mb-4">
-            Conferencia FIEL es un encuentro anual para pastores y líderes comprometidos con servir a la iglesia con integridad y fidelidad. Cada año, Dios renueva el corazón del ministro y afirma su llamado en un ambiente centrado en la Palabra y la presencia de Dios.
-          </p>
-          <a href="https://www.youtube.com/watch?v=z1zE-1loXAU&list=PLxnZIeiBlkVjBWeIAo30mnRvhKqgB5xHy" class="text-primary-600 font-medium hover:text-primary-700" target="_blank">
-            Ver última Conferencia Fiel →
-          </a>
-        </div>
-
-        <div class="card text-center p-8 col-span-1 md:col-span-2 lg:col-span-3 bg-black shadow-lg rounded-lg text-white">
-          <a href="https://api.whatsapp.com/message/3KXK5UW2PPXVF1?autoload=1&app_absent=0" target="_blank" class="flex items-center justify-center space-x-2">
-          <!-- Ícono de calendario -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3M16 7V3M3 11h18M5 19h14a2 2 0 002-2V7H3v10a2 2 0 002 2z" />
-          </svg>
-          <h3 class="text-xl font-bold text-white">Quiero asistir presencialmente</h3>
-          </a>
-        </div>
-      </div>
-
-      <!-- Button to view all ministries  
-      <div class="mt-12 text-center">
-        <Button href="/ministries" variant="outline">
-          View All Ministries
-        </Button>
-      </div>
-    </div>
-    -->
-  </section>
+  <!-- Ministries Preview (comentado original) 
+  <section class="py-16 bg-gray-50"> ... </section> 
+  -->
   
   <!-- Call to Action -->
   <section 
@@ -182,7 +131,8 @@ import Button from "../components/UI/Button.astro";
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Crece con AVA</h2>
         <p class="text-xl mb-8">
-          Nos encantaría acompañarte en tu camino ministerial. Si eres nuevo aquí, te invitamos a explorar nuestros recursos y eventos diseñados para ayudarte a crecer en tu fe y liderazgo.
+          Nos encantaría acompañarte en tu camino ministerial. 
+          Si eres nuevo aquí, te invitamos a explorar nuestros recursos y eventos diseñados para ayudarte a crecer en tu fe y liderazgo.
         </p>
         
         <div class="flex flex-wrap justify-center gap-4">
@@ -190,7 +140,11 @@ import Button from "../components/UI/Button.astro";
             Soy nuevo aquí
           </Button>
           
-          <Button href="/contact" variant="outline" size="lg" class="bg-white/10 text-white border-white hover:bg-white hover:text-gray-900 backdrop-blur-sm">
+          <Button 
+            href="/contact" 
+            variant="outline" 
+            size="lg" 
+            class="bg-white/10 text-white border-white hover:bg-white hover:text-gray-900 backdrop-blur-sm">
             Quiero ser miembro
           </Button>
         </div>
