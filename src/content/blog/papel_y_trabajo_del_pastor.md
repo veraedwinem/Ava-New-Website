@@ -1,7 +1,7 @@
 ---
 title: "La Importancia del Papel y el Trabajo del Pastor"
 slug: "papel_y_trabajo_del_pastor"
-pubDate: "2025-09-08"
+pubDate: 2025-09-08
 description: "Introducción al papel y trabajo del pastor cristiano, su importancia en la iglesia y en la sociedad, así como la necesidad de ceremonias, liturgias y promesas de servicio fiel."
 author: "Dr. John Spyker"
 image:
