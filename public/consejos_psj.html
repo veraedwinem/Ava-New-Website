@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Pastoral Interactiva</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #4a7eb9;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+        
+        .description {
+            color: #7f8c8d;
+            font-size: 1rem;
+        }
+        
+        .evaluation-container {
+            margin-bottom: 30px;
+        }
+        
+        .evaluation-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #4a7eb9;
+        }
+        
+        .evaluation-item label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .range-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        input[type="range"] {
+            flex: 1;
+            height: 8px;
+            -webkit-appearance: none;
+            appearance: none;
+            background: #dbe4f0;
+            border-radius: 5px;
+            outline: none;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #4a7eb9;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb:hover {
+            background: #2c3e50;
+        }
+        
+        .score-value {
+            font-weight: bold;
+            min-width: 30px;
+            text-align: center;
+            color: #4a7eb9;
+        }
+        
+        .results {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .score-display {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #fff;
+        }
+        
+        .score-message {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        
+        .score-range {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #ecf0f1;
+        }
+        
+        .instructions {
+            background: #e8f4fc;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #4a7eb9;
+        }
+        
+        @media (max-width: 768px) {
+            .range-container {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            
+            input[type="range"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Evaluación General del Pastor</h1>
+            <p class="description">Califíquese del 1 al 10 en cada punto. El promedio se calculará automáticamente.</p>
+        </header>
+        
+        <div class="instructions">
+            <p><strong>Instrucciones:</strong> Use los controles deslizantes para evaluarse en cada área. Su puntuación promedio se actualizará en tiempo real. Una puntuación de 1 significa que necesita mejorar significativamente, 10 significa que está excelente en esa área.</p>
+        </div>
+        
+        <div class="evaluation-container" id="evaluationItems">
+            <!-- Los elementos de evaluación se generarán mediante JavaScript -->
+        </div>
+        
+        <div class="results">
+            <h2>Puntuación Promedio</h2>
+            <div class="score-display" id="averageScore">5.0</div>
+            <div class="score-message" id="scoreMessage">¡Siga trabajando en su desarrollo ministerial!</div>
+            <div class="score-range">
+                <span>1 (Necesita mejorar)</span>
+                <span>10 (Excelente)</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const evaluationItems = [
+                "Su relación personal con Dios y su vida de oración",
+                "Su relación con su pareja",
+                "Su relación con sus hijos",
+                "Su relación con la familia de su pareja",
+                "Su relación con su equipo de colaboradores más cercanos",
+                "Su amor por la iglesia que pastorea",
+                "Su amor por los no cristianos",
+                "Su habilidad de levantar a nuevos líderes",
+                "Su habilidad en el mentoreo de otros líderes",
+                "Sus hábitos de estudio y preparación",
+                "Su habilidad en la predicación",
+                "Su habilidad en la resolución de conflictos",
+                "Sujeción a sus autoridades espirituales",
+                "Asistencia fiel a los eventos de su organización",
+                "Su conocimiento de la Biblia",
+                "Su rendición de cuentas",
+                "Su planeación de temas de predicación en un año",
+                "Sus habilidades administrativas y organizacionales",
+                "El cuidado de su salud física y emocional",
+                "Su tiempo de descanso y vacaciones",
+                "Su preparación y buen uso de un calendario anual",
+                "Su habilidad en el uso de un buen presupuesto familiar",
+                "Su habilidad de disfrutar lo que hace en el ministerio",
+                "Su testimonio personal en su comunidad",
+                "El sentirse seguro de si mismo en Dios",
+                "Su hábito de consultar a otros y pedir consejo",
+                "Sus habilidades en la innovación y creatividad",
+                "Su habilidad en la consejería",
+                "La diligencia de sus diezmos"
+            ];
+            
+            const evaluationContainer = document.getElementById('evaluationItems');
+            const averageScoreElement = document.getElementById('averageScore');
+            const scoreMessageElement = document.getElementById('scoreMessage');
+            
+            // Crear elementos de evaluación
+            evaluationItems.forEach((item, index) => {
+                const evaluationItem = document.createElement('div');
+                evaluationItem.className = 'evaluation-item';
+                
+                evaluationItem.innerHTML = `
+                    <label for="item-${index}">${item}</label>
+                    <div class="range-container">
+                        <input type="range" id="item-${index}" min="1" max="10" value="5" step="1">
+                        <span class="score-value">5</span>
+                    </div>
+                `;
+                
+                evaluationContainer.appendChild(evaluationItem);
+            });
+            
+            // Agregar event listeners a todos los sliders
+            const sliders = document.querySelectorAll('input[type="range"]');
+            const scoreValues = document.querySelectorAll('.score-value');
+            
+            sliders.forEach((slider, index) => {
+                slider.addEventListener('input', function() {
+                    scoreValues[index].textContent = this.value;
+                    calculateAverage();
+                });
+            });
+            
+            // Calcular el promedio
+            function calculateAverage() {
+                let total = 0;
+                sliders.forEach(slider => {
+                    total += parseFloat(slider.value);
+                });
+                
+                const average = total / sliders.length;
+                averageScoreElement.textContent = average.toFixed(1);
+                
+                // Actualizar mensaje según el promedio
+                if (average >= 8.5) {
+                    scoreMessageElement.textContent = "¡Excelente! Su ministerio está prosperando.";
+                } else if (average >= 7) {
+                    scoreMessageElement.textContent = "¡Buen trabajo! Continúe creciendo en su ministerio.";
+                } else if (average >= 5) {
+                    scoreMessageElement.textContent = "¡Siga trabajando en su desarrollo ministerial!";
+                } else {
+                    scoreMessageElement.textContent = "Hay áreas significativas que necesitan atención y crecimiento.";
+                }
+            }
+            
+            // Calcular promedio inicial
+            calculateAverage();
+        });
+    </script>
+</body>
+</html>
