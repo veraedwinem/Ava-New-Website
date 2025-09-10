@@ -7,19 +7,6 @@ import Button from "../components/UI/Button.astro";
 ---
 
 <BaseLayout transition:name="nav-trans">
-  <Fragment slot="head">
-    <!-- Script de Mailchimp solo para index -->
-    <script id="mcjs" is:inline>
-      !function(c,h,i,m,p){
-        m=c.createElement(h),
-        p=c.getElementsByTagName(h)[0],
-        m.async=1,
-        m.src=i,
-        p.parentNode.insertBefore(m,p)
-      }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/b9e5440e42390243cebf19d53/54eed70b9e04c675ce38da71e.js");
-    </script>
-  </Fragment>
-
   <HeroSection 
     title="Bienvenido a Alianza Vida Abundante"
     subtitle="Ministros sanos, iglesias sanas.</br>Iglesias sanas, comunidades sanas."
@@ -28,9 +15,6 @@ import Button from "../components/UI/Button.astro";
     ctaLink="https://www.youtube.com/channel/UCAondjOaylh84ktFbKsGw2g?sub_confirmation=1"
   />
 
-
-
-  
   <!-- Service Times -->
   <section class="py-16 bg-white">
     <div class="container">
@@ -40,7 +24,6 @@ import Button from "../components/UI/Button.astro";
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
             <h3 class="text-xl font-bold mb-3">Masterclass</h3>
-            <p class="text-2xl font-bold text-primary-600 mb-2"></p>
             <p class="text-gray-600 mb-4">
               Sesiones intensivas y prácticas enfocadas en liderazgo bíblico, 
               diseñadas para equipar a ministros y líderes cristianos con herramientas aplicables dentro y fuera del ministerio. 
@@ -58,13 +41,11 @@ import Button from "../components/UI/Button.astro";
           
           <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
             <h3 class="text-xl font-bold mb-3">Formación pastoral</h3>
-            <p class="text-2xl font-bold text-primary-600 mb-2"></p>
             <p class="text-gray-600 mb-4">
               Proceso de capacitación continua que busca fortalecer el llamado pastoral mediante enseñanza bíblica sólida, 
               desarrollo de carácter ministerial y acompañamiento. A través de este proceso, forma también una comunidad ministerial comprometida, 
               y camina unida hacia la edificación de iglesias.
             </p>
-            <p class="italic text-gray-500"></p>
 
             <div class="flex justify-center">
               <iframe 
@@ -119,10 +100,6 @@ import Button from "../components/UI/Button.astro";
   <!-- Events Section -->
   <EventList />
   
-  <!-- Ministries Preview (comentado original) 
-  <section class="py-16 bg-gray-50"> ... </section> 
-  -->
-  
   <!-- Call to Action -->
   <section 
     class="py-20 bg-cover bg-center text-white"
@@ -153,4 +130,15 @@ import Button from "../components/UI/Button.astro";
       </div>
     </div>
   </section>
+
+  <!-- Script de Mailchimp (al final del body) -->
+  <script id="mcjs" is:inline>
+    !function(c,h,i,m,p){
+      m=c.createElement(h),
+      p=c.getElementsByTagName(h)[0],
+      m.async=1,
+      m.src=i,
+      p.parentNode.insertBefore(m,p)
+    }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/b9e5440e42390243cebf19d53/54eed70b9e04c675ce38da71e.js");
+  </script>
 </BaseLayout>
