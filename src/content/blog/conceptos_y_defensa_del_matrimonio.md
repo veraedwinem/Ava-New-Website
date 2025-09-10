@@ -100,38 +100,8 @@ Es importante considerar todos estos puntos junto con muchos más.
 
 ---
 
+---
+
 ## Ejemplo de “Solicitud de Boda en nuestra Iglesia”
 
-1. Fecha de esta solicitud__________________________________________
-
-2. Nombre y edad del hombre_______________________________________
-
-3. Nombre y edad de la mujer_______________________________________
-
-4. Nombre del pastor que desean que los casé_________________________
-
-5. ¿Han sido casados anteriormente?_______ ¿Existe un divorcio legal?____
-
-6. Fecha en que desean ser casados_________________________________
-
-7. Lugar donde desean que se lleve a cabo la boda______________________
-
-8. ¿Habrá recepción?_________ ¿En qué lugar?_______________________
-
-9. ¿El hombre se considera Cristiano Evangélico?_______
-
-10. ¿La mujer se considera Cristiana Evangélica?_______
-
-11. ¿El hombre ya fue bautizado en agua?___________ ¿A qué edad?_______
-
-12. ¿La mujer ya fue bautizada en agua?____________ ¿A qué edad?_______
-
-13. ¿De qué iglesia se consideran miembros? El_________________________
-
-Ella _______________________________
-
-14. ¿Están dispuestos a tomar clases pre-matrimoniales?________
-
-15. ¿Están dispuestos a leer un libro que se les asignará?________
-
----
+[![📄 Descargar Solicitud de Boda](https://img.shields.io/badge/Solicitud%20de%20Boda-Descargar-blue?style=for-the-badge)](https://drive.google.com/file/d/1eIdO_EFh87OGGnCShqyHcwWwgW6In0Wj/view?usp=sharing)
