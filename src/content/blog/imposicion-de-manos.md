@@ -8,7 +8,7 @@ image: {
   url: "/uploads/blog/ManosOrdenacion.jpg",
   alt: "Ps. Juan enseñando"
 }
-tags: ["Ordenación", "Formación Pastoral"]
+tags: ["Ordenación", "Pastoral"]
 draft: false
 ---
 -----

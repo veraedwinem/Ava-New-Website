@@ -7,7 +7,7 @@ author: "Alianza Vida Abundante AR"
 image: {
   url: "/uploads/blog/etica.jpg",
   alt: "Firma de compromiso ético ministerial"}
-tags: ["Ética", "Ministerio", "Liderazgo", "AVA"]
+tags: ["Ministerio", "Liderazgo"]
 draft: false
 ---
 

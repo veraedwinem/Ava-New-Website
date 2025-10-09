@@ -8,7 +8,7 @@ image: {
   url: "/uploads/blog/pastor_que_crece.jpg",
   alt: "Líderes siendo preparados"
 }
-tags: ["Liderazgo", "Herramientas Pastorales"]
+tags: ["Liderazgo", "Pastoral"]
 draft: false
 ---
 

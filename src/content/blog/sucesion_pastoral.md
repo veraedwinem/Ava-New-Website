@@ -7,7 +7,7 @@ author: "Dr. John Spyker"
 image:
   url: "/uploads/blog/sucesion_pastoral.jpg"
   alt: "Proceso de sucesión pastoral en la iglesia"
-tags: ["Liderazgo", "Transición", "Ministerio"]
+tags: ["Liderazgo", "Ministerio"]
 draft: false
 ---
 

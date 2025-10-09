@@ -8,7 +8,7 @@ image: {
   url: "/uploads/blog/gobierno_iglesia.png",
   alt: "Ps. Juan enseñando"
 }
-tags: ["Libros", "Eclesiología"]
+tags: ["Libros", "Iglesia"]
 draft: false
 ---
 

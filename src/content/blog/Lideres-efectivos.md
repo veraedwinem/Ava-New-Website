@@ -8,7 +8,7 @@ image: {
   url: "/uploads/blog/Lideres.jpg",
   alt: "Líderes siendo preparados"
 }
-tags: ["Liderazgo", "Herramientas Pastorales"]
+tags: ["Liderazgo", "Ministerio"]
 draft: false
 ---
 ---------

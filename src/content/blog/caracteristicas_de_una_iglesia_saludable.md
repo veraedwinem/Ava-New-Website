@@ -7,7 +7,7 @@ author: "Dr. Juan Spyker"
 image: {
   url: "/uploads/blog/iglesia_saludable.jpg",
   alt: "Congregación adorando a Dios"}
-tags: ["Iglesia", "Ministerio", "Salud espiritual"]
+tags: ["Iglesia", "Ministerio"]
 draft: false
 ---
 

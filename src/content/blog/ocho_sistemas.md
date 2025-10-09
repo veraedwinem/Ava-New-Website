@@ -8,7 +8,7 @@ image: {
   url: "/uploads/blog/ocho_sistemas.jpg",
   alt: "Biblia de estudio"
 }
-tags: ["Eclesiología", "Herramientas Pastorales"]
+tags: ["Iglesia", "Pastoral"]
 draft: false
 ---
 

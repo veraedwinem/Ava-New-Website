@@ -8,7 +8,7 @@ image: {
   url: "/uploads/blog/agotamiento.jpg",
   alt: "Líderes siendo preparados"
 }
-tags: ["Liderazgo", "Herramientas Pastorales", "Notas"]
+tags: ["Liderazgo", "Pastoral"]
 draft: false
 ---
 # AGOTAMIENTO Y REVITALIZACIÓN EN LOS LÍDERES

@@ -7,7 +7,7 @@ author: "Dr. John Spyker"
 image:
   url: "/uploads/blog/verdadera_autoridad_espiritual.webp"
   alt: "Liderazgo pastoral según el modelo de Cristo"
-tags: ["Liderazgo", "Autoridad Espiritual", "Pastoral"]
+tags: ["Liderazgo", "Ministerio", "Pastoral"]
 draft: false
 ---
 

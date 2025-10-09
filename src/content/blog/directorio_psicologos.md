@@ -7,7 +7,7 @@ author: "Alianza Vida Abundante AR"
 image:
   url: "/uploads/blog/directorio_psicologos.jpg"
   alt: "Directorio de psicólogos y consejeros"
-tags: ["Psicología", "Consejería", "Recursos", "AVA"]
+tags: ["Psicología", "Consejería"]
 draft: false
 ---
 

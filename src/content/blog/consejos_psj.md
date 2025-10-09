@@ -8,7 +8,7 @@ image: {
   url: "/uploads/blog/_consejos_psj.jpg",
   alt: "Ps. Juan enseñando"
 }
-tags: ["Ministerio", "Eclesiología"]
+tags: ["Ministerio", "Pastoral"]
 draft: false
 ---
 
