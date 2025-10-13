@@ -12,13 +12,26 @@ tags: ["Liderazgo", "Ministerio"]
 draft: false
 ---
 
-# **LOS PUNTOS CIEGOS DE LOS LIDERES**
-por **Juan Spyker**  
-con algunas ideas de un podcast de **Craig Groeschel**  
 
-**Octubre, 2025**
+<div style="margin-top: 2rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+  <a
+    href="https://drive.google.com/file/d/1yle5YSgmKQSoAVjv4btm2dZH32kgQj9G/view?usp=drive_link"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="display: inline-block; background-color: #2563eb; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: bold; text-decoration: none; transition: background-color 0.3s ease;"
+    onmouseover="this.style.backgroundColor='#1d4ed8'"
+    onmouseout="this.style.backgroundColor='#2563eb'"
+  >
+    Descargar en PDF
+  </a>
+</div>
 
 ---
+
+# **LOS PUNTOS CIEGOS DE LOS LIDERES**
+**Octubre, 2025**
+
+
 
 ## **Introducción**
 
@@ -134,5 +147,7 @@ Conecta los puntos. Confía en tu intuición. Mantén la humildad. Presta atenci
 > La invitación es a vivir con humildad, apertura y disposición a ser corregidos.  
 > El liderazgo saludable comienza con el corazón dispuesto a ver lo que antes estaba oculto.
 
+por **Juan Spyker**  
+con algunas ideas de un podcast de **Craig Groeschel**  
 
 
