@@ -3,7 +3,7 @@ title: "Formación Pastoral Diciembre 2025"
 date: 2025-12-10
 time: "9:00 AM – 2:00 PM"
 location: "Más Vida Cumbres"
-image: "/uploads/events/formacion-pastoral-diciembre.jpg"
+image: "/uploads/events/fp_diciembre_2025.png"
 summary: "Cerremos juntos el año en comunidad. En esta Formación Pastoral de diciembre compartiremos buenos momentos, reflexiones inspiradoras y un almuerzo de fin de año en un ambiente navideño lleno de compañerismo y gratitud."
 tags: ["formación pastoral", "navidad", "fin de año", "comunidad"]
 registrationRequired: true
