@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://example.com/sitemap-index.xml
+Sitemap: https://alianzava.com/sitemap-index.xml

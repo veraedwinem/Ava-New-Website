@@ -7,7 +7,7 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com', // Replace with your site URL
+  site: 'https://alianzava.com', // Replace with your site URL
   integrations: [tailwind(), sitemap(), react()],
   markdown: {
     shikiConfig: {
