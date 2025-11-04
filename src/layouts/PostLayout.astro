@@ -31,11 +31,11 @@ const seoType = "article";
 
 let pageTitle = title;
 if (type === "sermon") {
-  pageTitle = `Sermon: ${title}`;
+  pageTitle = `Prédica: ${title}`;
 } else if (type === "event") {
-  pageTitle = `Event: ${title}`;
+  pageTitle = `Evento: ${title}`;
 } else if (type === "ministry") {
-  pageTitle = `${title} Ministry`;
+  pageTitle = `${title} Ministerio`;
 }
 
 const formattedDate = date ? formatDate(date) : null;
