@@ -10,7 +10,7 @@ registrationRequired: true
 draft: false
 ---
 
-## Convivencia de fin de año
+## Reunión de fin de año
 
 La **Formación Pastoral de diciembre** será una jornada especial para celebrar los logros, aprendizajes y vínculos construidos durante el año. Esta convivencia busca fortalecer nuestra **comunidad ministerial** y compartir juntos un tiempo de convivencia y formación.
 
