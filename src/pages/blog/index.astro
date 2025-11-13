@@ -162,75 +162,98 @@ const tags = [...new Set(posts.flatMap(post => post.data.tags))];
     </div>
   </section>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const searchInput = document.getElementById('search');
-      const authorInput = document.getElementById('author');
-      const tagCheckboxes = document.querySelectorAll('.tag-checkbox');
-      const fromDateInput = document.getElementById('from-date');
-      const toDateInput = document.getElementById('to-date');
-      const resetButton = document.getElementById('reset-filters');
-      const postsGrid = document.getElementById('posts-grid');
-      const noResults = document.getElementById('no-results');
-      const blogCards = document.querySelectorAll('.blog-card');
+<script>
+  // Definimos la función de inicialización fuera para poder llamarla en cada navegación
+  function initBlogFilters() {
+    const searchInput = document.getElementById('search');
+    const authorInput = document.getElementById('author');
+    const tagCheckboxes = document.querySelectorAll('.tag-checkbox');
+    const fromDateInput = document.getElementById('from-date');
+    const toDateInput = document.getElementById('to-date');
+    const resetButton = document.getElementById('reset-filters');
+    const noResults = document.getElementById('no-results');
+    const blogCards = document.querySelectorAll('.blog-card');
 
-      const filterPosts = () => {
-        const searchTerm = searchInput?.value.toLowerCase() || '';
-        const authorTerm = authorInput?.value.toLowerCase() || '';
-        const fromDate = fromDateInput?.value || '';
-        const toDate = toDateInput?.value || '';
+    // Función principal de filtrado
+    const filterPosts = () => {
+      const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
+      const authorTerm = authorInput ? authorInput.value.toLowerCase().trim() : '';
+      const fromDate = fromDateInput ? fromDateInput.value : '';
+      const toDate = toDateInput ? toDateInput.value : '';
 
-        const selectedTags = Array.from(tagCheckboxes)
-          .filter(checkbox => checkbox.checked)
-          .map(checkbox => checkbox.value);
+      // Obtenemos los tags seleccionados y los convertimos a minúsculas para evitar errores
+      const selectedTags = Array.from(tagCheckboxes)
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.value.toLowerCase());
 
-        let visibleCount = 0;
+      let visibleCount = 0;
 
-        blogCards.forEach(card => {
-          const title = card.getAttribute('data-title') || '';
-          const description = card.getAttribute('data-description') || '';
-          const author = card.getAttribute('data-author')?.toLowerCase() || '';
-          const date = card.getAttribute('data-date') || '';
-          const tags = (card.getAttribute('data-tags') || '').split(',');
+      blogCards.forEach(card => {
+        // Aseguramos que leemos los atributos correctamente
+        const title = (card.getAttribute('data-title') || '').toLowerCase();
+        const description = (card.getAttribute('data-description') || '').toLowerCase();
+        const author = (card.getAttribute('data-author') || '').toLowerCase();
+        const date = card.getAttribute('data-date') || '';
+        
+        // Obtenemos los tags del post y los limpiamos (minúsculas)
+        const cardTagsAttr = card.getAttribute('data-tags') || '';
+        const postTags = cardTagsAttr.split(',').map(t => t.trim().toLowerCase());
 
-          const matchesSearch = title.includes(searchTerm) || description.includes(searchTerm);
-          const matchesAuthor = !authorTerm || author.includes(authorTerm);
-          const matchesFromDate = !fromDate || date >= fromDate;
-          const matchesToDate = !toDate || date <= toDate;
-          const matchesTags = selectedTags.length === 0 || selectedTags.some(tag => tags.includes(tag));
+        // Lógica de coincidencia
+        const matchesSearch = title.includes(searchTerm) || description.includes(searchTerm);
+        const matchesAuthor = !authorTerm || author.includes(authorTerm);
+        const matchesFromDate = !fromDate || date >= fromDate;
+        const matchesToDate = !toDate || date <= toDate;
+        
+        // Lógica de Tags: Si no hay seleccionados es TRUE, si hay, verificamos si el post tiene ALGUNO de los seleccionados
+        const matchesTags = selectedTags.length === 0 || selectedTags.some(tag => postTags.includes(tag));
 
-          if (matchesSearch && matchesAuthor && matchesFromDate && matchesToDate && matchesTags) {
-            card.classList.remove('hidden');
-            visibleCount++;
-          } else {
-            card.classList.add('hidden');
-
-          }
-        });
-
-        if (noResults) {
-          noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+        if (matchesSearch && matchesAuthor && matchesFromDate && matchesToDate && matchesTags) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
         }
-      };
-
-      searchInput?.addEventListener('input', filterPosts);
-      authorInput?.addEventListener('input', filterPosts);
-      tagCheckboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', filterPosts);
       });
-      fromDateInput?.addEventListener('change', filterPosts);
-      toDateInput?.addEventListener('change', filterPosts);
 
-      resetButton?.addEventListener('click', () => {
-        if (searchInput) searchInput.value = '';
-        if (authorInput) authorInput.value = '';
-        tagCheckboxes.forEach(checkbox => {
-          checkbox.checked = false;
-        });
-        if (fromDateInput) fromDateInput.value = '';
-        if (toDateInput) toDateInput.value = '';
-        filterPosts();
-      });
+      if (noResults) {
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+    };
+
+    // Asignar Event Listeners
+    searchInput?.addEventListener('input', filterPosts);
+    authorInput?.addEventListener('input', filterPosts);
+    
+    tagCheckboxes.forEach(checkbox => {
+      // Usamos 'change' para checkbox
+      checkbox.addEventListener('change', filterPosts);
     });
-  </script>
+    
+    fromDateInput?.addEventListener('change', filterPosts);
+    toDateInput?.addEventListener('change', filterPosts);
+
+    resetButton?.addEventListener('click', () => {
+      if (searchInput) searchInput.value = '';
+      if (authorInput) authorInput.value = '';
+      tagCheckboxes.forEach(checkbox => {
+        checkbox.checked = false;
+      });
+      if (fromDateInput) fromDateInput.value = '';
+      if (toDateInput) toDateInput.value = '';
+      filterPosts();
+    });
+    
+    // IMPORTANTE: Ejecutar filtro al inicio por si el navegador guardó el estado de los checkbox (caché de formulario)
+    filterPosts();
+  }
+
+  // Ejecutar en la carga inicial y en cada navegación de Astro
+  document.addEventListener('astro:page-load', initBlogFilters);
+  
+  // Fallback: Si no usas View Transitions, esto asegura que corra al menos una vez
+  if (!document.querySelector('[data-astro-transition-persist]')) {
+      document.addEventListener('DOMContentLoaded', initBlogFilters);
+  }
+</script>
 </BaseLayout>

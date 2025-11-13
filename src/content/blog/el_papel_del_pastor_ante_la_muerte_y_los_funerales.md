@@ -8,7 +8,7 @@ image: {
   url: "/uploads/blog/papel_pastor_funerales.jpg",
   alt: "Reflexión pastoral sobre el papel del pastor ante la muerte y los funerales"
 }
-tags: ["Ministerio Pastoral", "Acompañamiento", "Consolación"]
+tags: ["Pastoral", "Ceremonias"]
 draft: false
 ---
 
