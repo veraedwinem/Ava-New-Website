@@ -3,7 +3,7 @@ title: "Formación Pastoral Febrero 2025"
 date: 2026-11-02
 time: "9:00 AM – 2:00 PM"
 location: "Más Vida Cumbres"
-image: "/uploads/thank-you-bg.webp"
+image: "/uploads/events//thank-you-bg.webp"
 summary: "Iniciemos juntos el año en comunidad. En esta Formación Pastoral de febrero compartiremos visión, nuevas metas y un tiempo de conexión para arrancar el 2026 con propósito, fe y compañerismo."
 tags: ["formación pastoral", "febrero", "inicio de año", "comunidad"]
 registrationRequired: true
