@@ -1,6 +1,6 @@
 ---
 title: "Formación Pastoral Diciembre 2025"
-date: 2025-12-10
+date: 2025-10-12
 time: "9:00 AM – 2:00 PM"
 location: "Más Vida Cumbres"
 image: "/uploads/events/fp_diciembre_2025.png"
