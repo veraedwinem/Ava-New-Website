@@ -1,6 +1,6 @@
 ---
 title: "Formación Pastoral Febrero 2025"
-date: 2026-11-02
+date: 2026-02-11
 time: "9:00 AM – 2:00 PM"
 location: "Más Vida Cumbres"
 image: "/uploads/events//thank-you-bg.webp"
