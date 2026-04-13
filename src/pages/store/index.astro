@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHeader from "../../components/Sections/PageHeader.astro";
+---
+
+<BaseLayout
+  title="Tienda - Alianza VA"
+  description="Explora nuestra tienda de recursos, libros y materiales para el crecimiento espiritual y ministerial."
+  transition:name="nav-trans"
+>
+  <PageHeader 
+    title="Tienda" 
+    subtitle="Recursos y materiales para tu crecimiento"
+    backgroundImage="/uploads/store-bg.jpg"
+  />
+  
+  <section class="py-16">
+    <div class="container">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestros Productos</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Estamos preparando nuestra selección de recursos para ti. Próximamente encontrarás libros, materiales de formación y más.
+        </p>
+      </div>
+
+      <!-- Placeholder for Store Content -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-100 aspect-video rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
+          <p class="text-gray-500">Próximamente</p>
+        </div>
+        <div class="bg-gray-100 aspect-video rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
+          <p class="text-gray-500">Próximamente</p>
+        </div>
+        <div class="bg-gray-100 aspect-video rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
+          <p class="text-gray-500">Próximamente</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
