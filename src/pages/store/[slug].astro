@@ -2,19 +2,18 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { supabase } from "../../lib/supabase";
 
-export async function getStaticPaths() {
-  const { data: books } = await supabase
-    .from("products")
-    .select("*")
-    .eq("active", true);
+const { slug } = Astro.params;
 
-  return (books ?? []).map((book) => ({
-    params: { slug: book.slug },
-    props: { book },
-  }));
+const { data: book, error } = await supabase
+  .from("products")
+  .select("*")
+  .eq("slug", slug)
+  .eq("active", true)
+  .single();
+
+if (error || !book) {
+  return Astro.redirect("/store");
 }
-
-const { book } = Astro.props;
 
 const { data: relatedBooks } = await supabase
   .from("products")
@@ -28,7 +27,7 @@ const { data: relatedBooks } = await supabase
   title={`${book.title} - Tienda AVA`}
   description={book.description ?? "Recurso digital de Alianza Vida Abundante para fortalecer tu crecimiento espiritual y ministerial."}
 >
-  <section class="pt-32 pb-20 bg-white">
+  <section class="pt-16 pb-20 bg-white font-serif">
     <div class="container">
       <a
         href="/store"
