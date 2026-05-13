@@ -1,10 +1,18 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHeader from "../../components/Sections/PageHeader.astro";
+
+import { supabase } from "../../lib/supabase";
+
+const { data: books, error } = await supabase
+  .from("products")
+  .select("*");
+
+console.log({ books, error });
 ---
 
 <BaseLayout
-  title="Tienda - Alianza VA"
+  title="Tienda - Alianza AVA"
   description="Explora nuestra tienda de recursos, libros y materiales para el crecimiento espiritual y ministerial."
   transition:name="nav-trans"
 >
@@ -15,26 +23,80 @@ import PageHeader from "../../components/Sections/PageHeader.astro";
   />
   
   <section class="py-16">
-    <div class="container">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestros Productos</h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Estamos preparando nuestra selección de recursos para ti. Próximamente encontrarás libros, materiales de formación y más.
-        </p>
-      </div>
+  <div class="container">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Nuestros Productos
+      </h2>
 
-      <!-- Placeholder for Store Content -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-gray-100 aspect-video rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-          <p class="text-gray-500">Próximamente</p>
-        </div>
-        <div class="bg-gray-100 aspect-video rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-          <p class="text-gray-500">Próximamente</p>
-        </div>
-        <div class="bg-gray-100 aspect-video rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-          <p class="text-gray-500">Próximamente</p>
-        </div>
-      </div>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Recursos diseñados para fortalecer tu vida espiritual,
+        liderazgo y ministerio.
+      </p>
     </div>
-  </section>
+
+    {
+      books && books.length > 0 ? (
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {
+            books.map((book) => (
+              <article
+                class="group bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-xl transition-all duration-300"
+              >
+                <div class="aspect-[4/5] overflow-hidden bg-gray-100">
+                  {
+                    book.cover_url ? (
+                      <img
+                        src={book.cover_url}
+                        alt={book.title}
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    ) : (
+                      <div class="w-full h-full flex items-center justify-center text-gray-400">
+                        Sin portada
+                      </div>
+                    )
+                  }
+                </div>
+
+                <div class="p-6">
+                  <h3 class="text-2xl font-bold mb-3">
+                    {book.title}
+                  </h3>
+
+                  {
+                    book.description && (
+                      <p class="text-gray-600 mb-6 line-clamp-3">
+                        {book.description}
+                      </p>
+                    )
+                  }
+
+                  <div class="flex items-center justify-between">
+                    <span class="text-2xl font-bold">
+                      ${book.price} MXN
+                    </span>
+
+                    <a
+                      href={`/store/${book.slug}`}
+                      class="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-black text-white hover:opacity-90 transition"
+                    >
+                      Ver producto
+                    </a>
+                  </div>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      ) : (
+        <div class="text-center py-20">
+          <p class="text-gray-500 text-lg">
+            No hay productos disponibles actualmente.
+          </p>
+        </div>
+      )
+    }
+  </div>
+</section>
 </BaseLayout>
