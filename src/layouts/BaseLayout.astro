@@ -4,7 +4,7 @@ import Seo from "../components/UI/Seo.astro";
 import Header from "../components/Global/Header.astro";
 import Footer from "../components/Global/Footer.astro";
 import { ClientRouter } from "astro:transitions";
-import Analytics from '@vercel/analytics/astro'
+import Analytics from "@vercel/analytics/astro";
 
 export interface Props {
   title?: string;
@@ -34,10 +34,19 @@ const {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
     <link rel="shortcut icon" href="favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
     <meta name="apple-mobile-web-app-title" content="Alianza VA" />
     <link rel="manifest" href="favicon/site.webmanifest" />
     <meta name="generator" content={Astro.generator} />
@@ -48,6 +57,46 @@ const {
       image={image}
       type={type}
       canonicalUrl={canonicalUrl}
+    />
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": ["Organization", "ReligiousOrganization"],
+        name: "Alianza Vida Abundante",
+        alternateName: "AVA",
+        url: "https://alianzava.com",
+        logo: "https://alianzava.com/favicon/android-chrome-512x512.png",
+        image: "https://alianzava.com/uploads/church-default.webp",
+        description:
+          "Alianza Vida Abundante (AVA) es una red de pastores y líderes cristianos en México enfocada en fortalecer, capacitar y conectar iglesias para impactar a las siguientes generaciones.",
+        telephone: "+52 443 285 4847",
+        email: "contacto@alianzava.com",
+        sameAs: [
+          "https://www.instagram.com/alianzavidaabundante/",
+          "https://www.facebook.com/ALIANZAVA.MX",
+        ],
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Morelia",
+          addressRegion: "Michoacán",
+          addressCountry: "MX",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 19.705,
+          longitude: -101.194,
+        },
+        areaServed: {
+          "@type": "Country",
+          name: "México",
+        },
+        foundingLocation: {
+          "@type": "Place",
+          name: "Morelia, Michoacán",
+        },
+      })}
     />
 
     <link rel="sitemap" href="/sitemap-index.xml" />
@@ -63,7 +112,7 @@ const {
 
       <main class="flex-grow">
         <slot />
-         <Analytics />
+        <Analytics />
       </main>
 
       <Footer />

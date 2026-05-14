@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { supabase } from "../../lib/supabase";
+import AddToCartButton from "../../components/Store/AddToCartButton.jsx";
 
 const { slug } = Astro.params;
 
@@ -25,7 +26,8 @@ const { data: relatedBooks } = await supabase
 
 <BaseLayout
   title={`${book.title} - Tienda AVA`}
-  description={book.description ?? "Recurso digital de Alianza Vida Abundante para fortalecer tu crecimiento espiritual y ministerial."}
+  description={book.description ??
+    "Recurso digital de Alianza Vida Abundante para fortalecer tu crecimiento espiritual y ministerial."}
 >
   <section class="pt-16 pb-20 bg-white font-serif">
     <div class="container">
@@ -37,7 +39,9 @@ const { data: relatedBooks } = await supabase
       </a>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-        <div class="bg-gray-100 rounded-3xl overflow-hidden border border-gray-200">
+        <div
+          class="bg-gray-100 rounded-3xl overflow-hidden border border-gray-200"
+        >
           {
             book.cover_url ? (
               <img
@@ -63,6 +67,12 @@ const { data: relatedBooks } = await supabase
           </h1>
 
           {
+            book.author && (
+              <p class="text-lg text-gray-500 mb-6">por {book.author}</p>
+            )
+          }
+
+          {
             book.description && (
               <p class="text-lg text-gray-600 leading-relaxed mb-8">
                 {book.description}
@@ -78,14 +88,21 @@ const { data: relatedBooks } = await supabase
           </div>
 
           <div class="space-y-4 mb-8">
-            <button
-              class="w-full md:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full bg-black text-white font-medium hover:bg-gray-800 transition"
-            >
-              Agregar al carrito
-            </button>
+            <AddToCartButton
+              client:load
+              product={{
+                id: book.id,
+                title: book.title,
+                slug: book.slug,
+                price: book.price,
+                cover_url: book.cover_url,
+                author: book.author,
+              }}
+            />
 
             <p class="text-sm text-gray-500">
-              Recibirás un enlace único de descarga después de completar tu compra.
+              Recibirás un enlace único de descarga después de completar tu
+              compra.
             </p>
           </div>
 
@@ -119,9 +136,7 @@ const { data: relatedBooks } = await supabase
               <p class="text-sm uppercase tracking-[0.25em] text-gray-500 mb-3">
                 Más recursos
               </p>
-              <h2 class="text-3xl md:text-4xl font-bold">
-                Podría interesarte
-              </h2>
+              <h2 class="text-3xl md:text-4xl font-bold">Podría interesarte</h2>
             </div>
 
             <a
@@ -133,49 +148,41 @@ const { data: relatedBooks } = await supabase
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {
-              relatedBooks.map((item) => (
-                <article class="bg-white rounded-3xl overflow-hidden border border-gray-200 hover:shadow-xl transition-all duration-300">
-                  <a href={`/store/${item.slug}`}>
-                    <div class="aspect-[4/5] bg-gray-100 overflow-hidden">
-                      {
-                        item.cover_url ? (
-                          <img
-                            src={item.cover_url}
-                            alt={item.title}
-                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                          />
-                        ) : (
-                          <div class="w-full h-full flex items-center justify-center text-gray-400">
-                            Sin portada
-                          </div>
-                        )
-                      }
-                    </div>
-
-                    <div class="p-6">
-                      <h3 class="text-xl font-bold mb-3">
-                        {item.title}
-                      </h3>
-
-                      <p class="text-gray-600 mb-5 line-clamp-2">
-                        {item.description}
-                      </p>
-
-                      <div class="flex items-center justify-between">
-                        <span class="font-bold">
-                          ${Number(item.price).toFixed(2)} MXN
-                        </span>
-
-                        <span class="text-sm">
-                          Ver →
-                        </span>
+            {relatedBooks.map((item) => (
+              <article class="bg-white rounded-3xl overflow-hidden border border-gray-200 hover:shadow-xl transition-all duration-300">
+                <a href={`/store/${item.slug}`}>
+                  <div class="aspect-[4/5] bg-gray-100 overflow-hidden">
+                    {item.cover_url ? (
+                      <img
+                        src={item.cover_url}
+                        alt={item.title}
+                        class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                      />
+                    ) : (
+                      <div class="w-full h-full flex items-center justify-center text-gray-400">
+                        Sin portada
                       </div>
+                    )}
+                  </div>
+
+                  <div class="p-6">
+                    <h3 class="text-xl font-bold mb-3">{item.title}</h3>
+
+                    <p class="text-gray-600 mb-5 line-clamp-2">
+                      {item.description}
+                    </p>
+
+                    <div class="flex items-center justify-between">
+                      <span class="font-bold">
+                        ${Number(item.price).toFixed(2)} MXN
+                      </span>
+
+                      <span class="text-sm">Ver →</span>
                     </div>
-                  </a>
-                </article>
-              ))
-            }
+                  </div>
+                </a>
+              </article>
+            ))}
           </div>
         </div>
       </section>
