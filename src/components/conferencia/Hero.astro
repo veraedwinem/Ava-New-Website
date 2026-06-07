@@ -76,13 +76,18 @@
       </a>
     </div>
 
-    <video 
-      autoplay
-      muted
-      loop
-      playsinline
-      preload="auto"
-      class="w-full h-[280px] md:h-[420px] lg:h-[560px] object-cover"
-    src="/uploads/videos/video.webm"></video>
+    <video
+  autoplay
+  muted
+  loop
+  playsinline
+  webkit-playsinline
+  preload="auto"
+  disablepictureinpicture
+  controlslist="nodownload nofullscreen noremoteplayback"
+  class="w-full h-[280px] md:h-[420px] lg:h-[560px] object-cover"
+>
+  <source src="/uploads/videos/video.webm" type="video/webm" />
+</video>
   </div>
 </section>
