@@ -1,0 +1,88 @@
+---
+import { schedule } from "@/data/fiel/schedule";
+---
+
+<section class="bg-fiel-bone py-24 lg:py-32">
+
+  <div class="max-w-[1800px] mx-auto">
+
+    <h2
+      class="
+      font-fielHeading
+        text-fiel-red
+        text-5xl
+        tracking-[-0.05em]
+        lg:text-9xl
+        font-bold text-right py-14 pr-4 fade-up"
+    >
+      Programa del Evento
+    </h2>
+
+    <div class="border-t border-fiel-oliveLight">
+
+      {
+        schedule.map((row) => (
+
+          <div
+            class="
+            border-b
+            border-fiel-oliveLight
+
+            py-10
+
+            grid
+            lg:grid-cols-4
+            gap-8"
+          >
+
+            <div class="px-16">
+
+              <p class="text-xl font-bold text-fiel-olive">
+                {row.date}
+              </p>
+
+              <h3
+                class="
+                text-fiel-olive
+                font-normal text-lg"
+              >
+                {row.block}
+              </h3>
+
+            </div>
+
+            {
+              row.sessions.map((session) => (
+
+                <div class="pl-4">
+
+                  <p
+                    class="
+                    text-fiel-olive text-lg font-bold"
+                  >
+                    {session.time}
+                  </p>
+
+                  <p
+                    class="
+                    text-fiel-red
+                    font-semibold"
+                  >
+                    {session.title}
+                  </p>
+
+                </div>
+
+              ))
+            }
+
+          </div>
+
+        ))
+      }
+
+    </div>
+
+  </div>
+
+</section>

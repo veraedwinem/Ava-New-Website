@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          50:  '#eaeffa',
+          50: '#eaeffa',
           100: '#d5dff5',
           200: '#acc0eb',
           300: '#82a1e2',
@@ -17,8 +17,9 @@ module.exports = {
           900: '#091329',
           950: '#070f21',
         },
+
         secondary: {
-          50:  '#faf5ff',
+          50: '#faf5ff',
           100: '#f3e8ff',
           200: '#e9d5ff',
           300: '#d8b4fe',
@@ -30,8 +31,9 @@ module.exports = {
           900: '#581c87',
           950: '#3b0764',
         },
+
         accent: {
-          50:  '#fff7ed',
+          50: '#fff7ed',
           100: '#ffedd5',
           200: '#fed7aa',
           300: '#fdba74',
@@ -43,15 +45,32 @@ module.exports = {
           900: '#7c2d12',
           950: '#431407',
         },
+
+        // ===== CONFERENCIA FIEL =====
+
+        fiel: {
+          red: '#8B1E1E',
+          rose: '#BA807E',
+          bone: '#F7F4ED',
+          olive: '#5F7668',
+          oliveLight: '#A1ACA2',
+        },
       },
+
       fontFamily: {
-        serif: ['"Inter"', 'Georgia', 'serif'],
-        sans: ['"Source Sans Pro"', 'system-ui', 'sans-serif'],
+        serif: ['Inter', 'Georgia', 'serif'],
+        sans: ['Source Sans Pro', 'system-ui', 'sans-serif'],
+
+        // ===== CONFERENCIA FIEL =====
+
+        fiel: ['Inter', 'sans-serif'],
+        fielHeading: ['Helvetica Now Display', 'sans-serif'],
+        fielAccent: ['Aileron', 'sans-serif'],
       },
     },
   },
   plugins: [
     require('@tailwindcss/typography'),
-    require("@tailwindcss/line-clamp"),
+    require('@tailwindcss/line-clamp'),
   ],
 };

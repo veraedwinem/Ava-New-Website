@@ -1,0 +1,80 @@
+---
+import WorkshopCard from "./WorkshopCard.astro";
+import { workshops } from "@/data/fiel/workshops";
+---
+
+<section class="bg-fiel-bone py-24 lg:py-32">
+
+  <div class="max-w-[1800px] mx-auto px-4
+      md:px-24">
+
+    <div
+      class="
+      font-fiel
+      flex
+      flex-col
+      lg:flex-row
+      justify-between
+      gap-8
+      items-center
+      mb-16"
+    >
+
+      <h2
+        class="
+        font-fielHeading
+        text-fiel-red
+        font-semibold
+        tracking-tighter
+        text-5xl
+        lg:text-7xl
+        fade-up
+        leading-none
+        max-w-[900px]"
+      >
+        Talleres para la iglesia,
+        pastores y líderes
+      </h2>
+
+      <a
+        href="https://forms.gle/YeGQ38c3aTeybNfZ6"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="
+        bg-fiel-red
+        text-white
+        font-bold
+        tracking-tighter
+        text-3xl
+
+        px-8
+        py-4
+
+        uppercase hover:scale-110 transition-transform duration-300"
+      >
+        Seleccionar Taller
+      </a>
+
+    </div>
+
+    <div
+      class="
+      grid
+      lg:grid-cols-2
+      gap-6"
+    >
+
+      {
+        workshops.map((workshop,index) => (
+          <WorkshopCard
+            workshop={workshop}
+            right={index % 2 !== 0}
+          />
+        ))
+      }
+
+    </div>
+
+  </div>
+
+</section>

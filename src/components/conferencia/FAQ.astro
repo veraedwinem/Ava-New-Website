@@ -1,0 +1,85 @@
+---
+import { faqs } from "@/data/fiel/faqs";
+---
+
+
+
+<section
+  class="
+  bg-fiel-bone
+
+  grid
+  lg:grid-cols-2"
+>
+
+  <img
+    src="/uploads/conferencia-fiel/faq.webp"
+    alt=""
+    class="
+    w-full
+    h-full
+    object-cover"
+  />
+
+  <div
+    class="
+    p-8
+    lg:p-16"
+  >
+
+    <h2
+      class="
+      font-fiel
+      font-semibold
+      tracking-tighter
+      text-right
+      text-fiel-red
+
+      text-5xl
+      lg:text-[5rem]
+      fade-up
+      leading-none
+      mb-12"
+    >
+      Preguntas <br/>
+      frecuentes
+    </h2>
+
+    <div class="space-y-8">
+
+      {
+        faqs.map((faq) => (
+
+          <div
+            class="
+            border-b
+            border-fiel-oliveLight border-b-2
+            pb-8"
+          >
+
+            <h3
+              class="
+              text-fiel-red
+              font-bold tracking-tighter text-right text-3xl"
+            >
+              {faq.question}
+            </h3>
+
+            <p
+              class="
+              mt-3
+              text-fiel-olive text-right text-md"
+            >
+              {faq.answer}
+            </p>
+
+          </div>
+
+        ))
+      }
+
+    </div>
+
+  </div>
+
+</section>

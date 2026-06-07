@@ -8,7 +8,7 @@ const navItems = [
   { text: "Recursos", href: "/blog" },
   // { text: "Tienda", href: "/store" },
   { text: "Soy nuevo", href: "/im-new" },
-  { text: "Conferencia Fiel 26", href: "/conferenciafiel2026" },
+  { text: "Conferencia Fiel 26", href: "/conferencia-fiel" },
 ];
 
 // Get the current URL path to highlight the active link
@@ -27,7 +27,7 @@ import CartIndicator from "../Store/CartIndicator.jsx";
       currentPath === item.href ||
       (item.href !== "/" && currentPath.startsWith(item.href));
 
-    const isSpecial = item.href === "/conferenciafiel2026";
+    const isSpecial = item.href === "/conferencia-fiel";
 
     return (
       <li>
@@ -35,7 +35,7 @@ import CartIndicator from "../Store/CartIndicator.jsx";
           href={item.href}
           class={`text-base font-medium transition-all ${
             isSpecial
-              ? "bg-primary-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-primary-700 hover:scale-105"
+              ? " bg-fiel-red text-white px-4 py-2 rounded-full shadow-md hover:bg-fiel-red/80 transition-colors hover:scale-105"
               : isActive
                 ? "text-primary-600"
                 : "text-gray-700 hover:text-primary-600"

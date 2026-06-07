@@ -1,0 +1,57 @@
+---
+const { speaker } = Astro.props;
+---
+
+<div
+  class="
+  border-t
+  border-fiel-oliveLight
+
+  grid
+  grid-cols-1
+  lg:grid-cols-[2fr_250px_250px]
+
+  gap-6
+  items-center
+  pr-8"
+>
+
+  <h3
+    class="
+    font-fielHeading
+    text-fiel-olive
+    uppercase
+    leading-none
+    font-bold
+    tracking-[-0.08em]
+    text-4xl
+    md:text-6xl
+    lg:text-[7rem] fade-up"
+  >
+    {speaker.number} {speaker.name}
+  </h3>
+
+  <p
+    class="
+    text-fiel-red
+    font-fielAccent
+    tracking-tighter
+    font-bold
+    uppercase
+    text-xs
+    lg:text-xl fade-up"
+  >
+    {speaker.role}
+  </p>
+
+  <img
+    src={speaker.image}
+    alt={speaker.name}
+    class="
+    h-[220px]
+    lg:h-[250px]
+    lg:w-full
+    object-cover clip-reveal"
+  />
+
+</div>
