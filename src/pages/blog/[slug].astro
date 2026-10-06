@@ -3,6 +3,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import PostLayout from "../../layouts/PostLayout.astro";
 import { getCollection } from "astro:content";
 
+export const prerender = true;
+
 // Generate static paths for all blog posts
 export async function getStaticPaths() {
   try {
